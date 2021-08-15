@@ -5,16 +5,13 @@ import "../style/mobile/univ_mobile.css";
 function App() {
   return (
     <main className="App">
-      <section className="section_1">
-
-      </section>
-      <section className="section_2">
         <AppRouter />
-      </section>
       <footer>
-        Osangminstudio@gmail.com
+        <div>
+          © 2021. Oh Sang Min. All Rights Reserved.
+        </div>
+        <div>Designed by Naked Friends+82</div>
       </footer>
-      
     </main>
   );
 }

@@ -11,8 +11,8 @@ const AppRouter = () => {
 
 return (
   <Router>
+    <Navig />
     <Switch>
-      <Navig />
       <Route exact path="/">
         <Work />
       </Route>
