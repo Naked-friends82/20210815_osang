@@ -5,7 +5,7 @@ const About = () => {
   return(
     <section className="section_about">
       <div className="section_about__profile">
-        <img src={profileImg} alt="profile Osangmin" />
+        <img class="image_draft" src={profileImg} alt="profile Osangmin" />
         <h2>SANGMIN OH (Born 1994, Kr)</h2>
         <p>2017~ Design Academy Eindhoven (NL) - Public and Private</p>
       </div>

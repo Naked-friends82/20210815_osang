@@ -1,17 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ThanksPressure from '../components/ThanksPressure';
 import Papa from '../components/Papa';
 import Butterfly from '../components/Butterfly';
+import tpIndex from '../asset/tp_index.jpg';
 
 
 const Work = () => {
+  const [contentToggle, setContentToggle] = useState(undefined);
+  
+  const showProject =(e) => {
+    const {target: {alt}} = e;
+    setContentToggle(alt);
+  }
   return(
     <section className="section_work">
-      <div className="section_work__projectReck">
-        <ThanksPressure />
-        <Papa />
-        <Butterfly />
-      </div>
+        {
+          contentToggle === "Thankspressure" ? <ThanksPressure showProject={showProject}/> :
+          contentToggle === "PAPA" ? <Papa showProject={showProject}/> :
+          contentToggle === "Butterfly" ? <Butterfly showProject={showProject}/> :
+
+          <div className="section_work__projectReck">
+            <div className="project_index">
+              <img className="tpIndex" src={tpIndex} alt="Thankspressure" onClick={showProject} />
+              <h1>Thankspressure</h1>
+            </div>
+
+            <div className="project_index">
+              <img className="tpIndex" src={tpIndex} alt="PAPA" onClick={showProject} />
+              <h1>PAPA</h1>
+            </div>
+
+            <div className="project_index">
+              <img className="tpIndex" src={tpIndex} alt="Butterfly" onClick={showProject} />
+              <h1>Butterfly</h1>
+            </div>
+          </div>
+        }
     </section>
   )
 };

@@ -16,7 +16,11 @@ const Navig = () => {
           <Link className="link" to="/news">News</Link>
 
           <Link className="link" to="/contact">Contact</Link>
-          <button><img/></button>
+          
+          <a className="link" href="https://www.instagram.com/osangmin_studio/">
+            <i class="fab fa-instagram" />
+          </a>
+            
       </nav>
     </header>
   )
