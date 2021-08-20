@@ -1,6 +1,52 @@
-.tpIndex {
-  width: 200px;
+:root {
+  /* color */
+  --color-black: #13131a;
+  --color-white: #e8f1fa;
+  --color-gray: #dbdbdd;
+  --color-darkgray: #949499;
+  --color-ddarkgray: #5c5555;
+  --color-dddarkgray: #32393a;
+  /* Font size */
+  --font-mmax: 40px;
+  --font-max: 22px;
+  --font-medium: 18px;
+  --font-regular: 15px;
+  --font-small: 14px;
+  --font-min: 12px;
+  /* Font weight */
+  --weight-Extra-bold: 700;
+  --weight-bold: 600;
+  --weight-medium: 400;
+  --weight-light: 300;
+  /* Font family */
+  /* Google */
+  --typo-nanum: "Nanum Myeongjo", serif;
 }
-.image_draft {
-  width: 400px;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
+/* universe */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+/* only Head on project_content */
+h1 {
+  margin: 0px;
+}
+/* only name on About */
+h2 {
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: var(--weight-light);
+  font-size: var(--font-min);
+  color: var(--color-orange);
 }

@@ -1,0 +1,26 @@
+/* work */
+.section_work {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.section_work .section_work__projectReck {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: var(--typo-nanum);
+}
+.project_index {
+  height: 100%;
+  margin: 0px 32px;
+}
+.index_img {
+  width: 220px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.index_img:hover {
+  filter: drop-shadow(10px 0px 1px var(--color-darkgray));
+  transition: 0.4s ease-out;
+}
