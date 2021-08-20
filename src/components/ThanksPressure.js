@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import "../style/web/tspre.css";
 import tpMainImg from '../asset/tpMainImg.jpg';
 import tp_detail_1 from '../asset/tp_detail_1.jpg';
 import tp_detail_2 from '../asset/tp_detail_2.jpg';
 import tp_detail_3 from '../asset/tp_detail_3.jpg';
 import tp_detail_4 from '../asset/tp_detail_4.jpg';
 import tp_detail_5 from '../asset/tp_detail_5.jpg';
-import tp_exhib from '../asset/tp_exhib.jpg';
+
+
 
 
 const detail_RECK = [
@@ -37,28 +39,31 @@ const ThanksPressure = ({showProject}) => {
   return(
     <div className="project">
       <div className="project_content">
-        <img class="image_draft" src={tpMainImg} alt="Thankspressure main"/>
-        <h1>Thankspressure<span>[2020]</span></h1>
-        <p>
+        <img className="project_mainImg" src={tpMainImg} alt="Thankspressure main"/>
+        <h1 className="project_header">Thankspressure <span className="project_year">[2020]</span></h1>
+        <p className="project_description">
           "If you have a headache, step Samba.”<br /><br />
           With this carpet, six common ailments are treated with pressure and dancing steps. Two realms of acupressure & sports dances, serious & exciting and eastern & western are playfully joined. This new universal language is intertwined and born again by meeting textile technologies.<br /><br />
+
           The project is about the combination of two worlds that how people have used their feet. Osangmin studio searched and shared how human feet have experienced the spaces depending on the different cultures. With the eastern medical acupressure and western sports dance research, He has found one stage to unite two pieces of knowledge. Moreover, This concept has been developed and visualized with the experiments of textile materials, colors, and techniques. And it was produced and collaborated with TextielLab in Tilburg. Additionally, A book accompanied by the carpet shows how to use this carpet technically. At the same time, It tells the story of how two worlds harmonize in a piece of work.
         </p>
-        <div className="image Reck">
-
-          <img class="image_draft" src={detail_RECK[currentDetail]} alt="thankspressure detail" />
-          <button onClick={shiftDetail} value="prev" >&#10094;</button>
-          <button onClick={shiftDetail} value="next" >&#10095;</button>
-          <div className="dot_reck">
-            <button class="dot" value="0" onClick={shiftDetail}>1</button>
-            <button class="dot" value="1" onClick={shiftDetail}>2</button>
-            <button class="dot" value="2" onClick={shiftDetail}>3</button>
-            <button class="dot" value="3" onClick={shiftDetail}>4</button>
-            <button class="dot" value="4" onClick={shiftDetail}>5</button>
+        <div className="image_reck">
+          <img class="image_reck__imgs" src={detail_RECK[currentDetail]} alt="thankspressure detail" />
+          <div className="image_reck__btn">
+            <button className="image_btn" onClick={shiftDetail} value="prev" >&#10094;</button>
+            <button className="image_btn" onClick={shiftDetail} value="next" >&#10095;</button>
+          </div>
+          <div className="image_reck__dot">
+            <button className="dot" value="0" onClick={shiftDetail}></button>
+            <button className="dot" value="1" onClick={shiftDetail}></button>
+            <button className="dot" value="2" onClick={shiftDetail}></button>
+            <button className="dot" value="3" onClick={shiftDetail}></button>
+            <button className="dot" value="4" onClick={shiftDetail}></button>
           </div>
         </div>
-        <img class="image_draft" src={tp_exhib} alt="Thankspressure exhibition"/>
-        <button onClick={showProject} >previous</button>
+        <div className="ex">
+          <button className="project_exit" onClick={showProject} >previous</button>
+        </div>
       </div>
   </div>
   )
