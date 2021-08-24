@@ -17,16 +17,16 @@ return (
   <Router>
     <Navig />
     <Switch>
-      <Route exact path="/work">
+      <Route exact path="/">
         <Work />
       </Route>
-      <Route exact path="/work/thankspressure">
+      <Route exact path="/work_thankspressure">
         <ThanksPressure />
       </Route>
-      <Route exact path="/work/papa">
+      <Route exact path="/work_papa">
         <Papa />
       </Route>
-      <Route exact path="/work/butterfly">
+      <Route exact path="/work_butterfly">
         <Butterfly />
       </Route>
       <Route exact path="/about">
