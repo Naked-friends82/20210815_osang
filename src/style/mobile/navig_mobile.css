@@ -20,6 +20,15 @@
     padding: 4px;
     margin-left: 0px;
   }
+  .nav_btn {
+    display: inline;
+    position: fixed;
+    top: 16px;
+    right: 12px;
+  }
+  .invi {
+    display: none;
+  }
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .navBox_1 {
@@ -42,5 +51,14 @@
   .navBox_2__nav .favicon {
     padding: 4px;
     margin-left: 0px;
+  }
+  .nav_btn {
+    display: inline;
+    position: fixed;
+    top: 16px;
+    right: 12px;
+  }
+  .invi {
+    display: none;
   }
 }
