@@ -14,13 +14,19 @@
 .project_index {
   height: 100%;
   margin: 0px 32px;
+  color: var(--color-black);
+  text-decoration: none;
 }
 .index_img {
   width: 220px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 .index_img:hover {
-  filter: drop-shadow(10px 0px 1px var(--color-darkgray));
+  /* filter: drop-shadow(10px 4px 6px var(--color-darkgray)); */
+  filter: saturate(0.8);
   transition: 0.4s ease-out;
+}
+.index_header {
+  font-size: var(--font-sangmax);
 }

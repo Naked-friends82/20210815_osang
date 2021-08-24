@@ -9,10 +9,12 @@
   /* Font size */
   --font-mmax: 40px;
   --font-max: 22px;
+  --font-sangmax: 20px;
   --font-medium: 18px;
   --font-regular: 15px;
   --font-small: 14px;
   --font-min: 12px;
+  --font-sangmin: 10px;
   /* Font weight */
   --weight-Extra-bold: 700;
   --weight-bold: 600;
@@ -41,12 +43,4 @@ h2 {
 }
 p {
   margin: 0px;
-}
-footer {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: var(--weight-light);
-  font-size: var(--font-min);
-  color: var(--color-orange);
 }

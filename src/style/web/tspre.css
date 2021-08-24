@@ -70,13 +70,12 @@
 .image_reck__dot .dot:hover {
   background-color: var(--color-darkgray);
 }
-.ex {
+.project_exit {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.project_exit {
+.exit_btn {
   border: none;
-  /* background-color: transparent; */
   cursor: pointer;
 }
