@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+  .navBox_1 {
+    top: 16px;
+    left: 12px;
+  }
+  .mainLogo {
+    height: 24px;
+  }
+  .navBox .navBox_2__nav {
+    top: 46px;
+    left: 4px;
+    right: 0px;
+  }
+  .navBox_2__nav .link {
+    margin: 0px 2px;
+    padding: 4px 6px;
+    font-size: var(--font-min);
+  }
+  .navBox_2__nav .favicon {
+    padding: 4px;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .navBox_1 {
+    top: 16px;
+    left: 12px;
+  }
+  .mainLogo {
+    height: 24px;
+  }
+  .navBox .navBox_2__nav {
+    top: 46px;
+    left: 4px;
+    right: 0px;
+  }
+  .navBox_2__nav .link {
+    margin: 0px 2px;
+    padding: 4px 6px;
+    font-size: var(--font-min);
+  }
+  .navBox_2__nav .favicon {
+    padding: 4px;
+    margin-left: 0px;
+  }
+}

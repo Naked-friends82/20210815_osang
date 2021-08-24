@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  /* work */
+  .section_work {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .section_work .section_work__projectReck {
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+  }
+  .project_index {
+    height: 100%;
+    margin: 0px;
+  }
+  .index_img {
+    margin-bottom: 6px;
+  }
+  .index_header {
+    font-size: var(--font-medium);
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}
