@@ -1,43 +1,29 @@
-import React, { useState } from 'react';
-import ThanksPressure from '../components/ThanksPressure';
-import Papa from '../components/Papa';
-import Butterfly from '../components/Butterfly';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import tpIndex from '../asset/tp_index.jpg';
 import "../style/web/work.css";
+import "../style/mobile/work_mobile.css";
 
 
 const Work = () => {
-  const [contentToggle, setContentToggle] = useState(undefined);
-  
-  const showProject =(e) => {
-    const {target: {alt}} = e;
-    setContentToggle(alt);
-  }
   return(
     <section className="section_work">
-        {
-          contentToggle === "Thankspressure" ? <ThanksPressure showProject={showProject}/> :
-          contentToggle === "PAPA" ? <Papa showProject={showProject}/> :
-          contentToggle === "Butterfly" ? <Butterfly showProject={showProject}/> :
-
           <div className="section_work__projectReck">
-            
-            <div className="project_index">
-              <img className="index_img" src={tpIndex} alt="Thankspressure" onClick={showProject} />
+            <Link className="project_index" to='/work/thankspressure'>
+              <img className="index_img" src={tpIndex} alt="Thankspressure" />
               <h1 className="index_header">Thankspressure</h1>
-            </div>
+            </Link>
 
-            <div className="project_index">
-              <img className="index_img" src={tpIndex} alt="PAPA" onClick={showProject} />
+            <Link className="project_index" to='/work/papa'>
+              <img className="index_img" src={tpIndex} alt="PAPA" />
               <h1 className="index_header">PAPA</h1>
-            </div>
+            </Link>
 
-            <div className="project_index">
-              <img className="index_img" src={tpIndex} alt="Butterfly" onClick={showProject} />
+            <Link className="project_index" to='/work/butterfly'>
+              <img className="index_img" src={tpIndex} alt="Butterfly" />
               <h1 className="index_header">Butterfly</h1>
-            </div>
+            </Link>
           </div>
-        }
     </section>
   )
 };

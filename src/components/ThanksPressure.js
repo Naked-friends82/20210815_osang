@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
-import "../style/web/tspre.css";
 import tpMainImg from '../asset/tpMainImg.jpg';
 import tp_detail_1 from '../asset/tp_detail_1.jpg';
 import tp_detail_2 from '../asset/tp_detail_2.jpg';
 import tp_detail_3 from '../asset/tp_detail_3.jpg';
 import tp_detail_4 from '../asset/tp_detail_4.jpg';
 import tp_detail_5 from '../asset/tp_detail_5.jpg';
+import tp_detail_6 from '../asset/tp_detail_6.jpg';
+import tp_detail_7 from '../asset/tp_detail_7.jpg';
+import tp_detail_8 from '../asset/tp_detail_8.jpg';
+import "../style/web/tspre.css";
+import "../style/mobile/tspre_mobile.css";
 
 
 
 
 const detail_RECK = [
-  tp_detail_1,
   tp_detail_2,
   tp_detail_3,
   tp_detail_4,
-  tp_detail_5
+  tp_detail_1,
+  tp_detail_5,
+  tp_detail_6,
+  tp_detail_7,
+  tp_detail_8,
 ];
 
-const ThanksPressure = ({showProject}) => {
+const ThanksPressure = () => {
   const [currentDetail, setCurrentDetail] = useState(0);
 
   const shiftDetail = (e) => {
@@ -26,7 +33,7 @@ const ThanksPressure = ({showProject}) => {
     console.log(value);
     if(value === "prev" && currentDetail !== 0){
       setCurrentDetail(currentDetail -1);
-    } else if(value === "next" && currentDetail !== 4){
+    } else if(value === "next" && currentDetail !== 7){
       setCurrentDetail(currentDetail +1);
     } else if(value === "0"){setCurrentDetail(0);
     } else if(value === "1"){setCurrentDetail(1);
@@ -34,6 +41,9 @@ const ThanksPressure = ({showProject}) => {
     } else if(value === "3"){setCurrentDetail(3);
     } else if(value === "4"){setCurrentDetail(4);
     } else if(value === "5"){setCurrentDetail(5);
+    } else if(value === "6"){setCurrentDetail(6);
+    } else if(value === "7"){setCurrentDetail(7);
+    } else if(value === "8"){setCurrentDetail(8);
     }
   };
   return(
@@ -48,7 +58,7 @@ const ThanksPressure = ({showProject}) => {
           The project is about the combination of two worlds that how people have used their feet. Osangmin studio searched and shared how human feet have experienced the spaces depending on the different cultures. With the eastern medical acupressure and western sports dance research, He has found one stage to unite two pieces of knowledge. Moreover, This concept has been developed and visualized with the experiments of textile materials, colors, and techniques. And it was produced and collaborated with TextielLab in Tilburg. Additionally, A book accompanied by the carpet shows how to use this carpet technically. At the same time, It tells the story of how two worlds harmonize in a piece of work.
         </p>
         <div className="image_reck">
-          <img class="image_reck__imgs" src={detail_RECK[currentDetail]} alt="thankspressure detail" />
+          <img className="image_reck__imgs" src={detail_RECK[currentDetail]} alt="thankspressure detail" />
           <div className="image_reck__btn">
             <button className="image_btn" onClick={shiftDetail} value="prev" >&#10094;</button>
             <button className="image_btn" onClick={shiftDetail} value="next" >&#10095;</button>
@@ -59,10 +69,10 @@ const ThanksPressure = ({showProject}) => {
             <button className="dot" value="2" onClick={shiftDetail}></button>
             <button className="dot" value="3" onClick={shiftDetail}></button>
             <button className="dot" value="4" onClick={shiftDetail}></button>
+            <button className="dot" value="5" onClick={shiftDetail}></button>
+            <button className="dot" value="6" onClick={shiftDetail}></button>
+            <button className="dot" value="7" onClick={shiftDetail}></button>
           </div>
-        </div>
-        <div className="ex">
-          <button className="project_exit" onClick={showProject} >previous</button>
         </div>
       </div>
   </div>

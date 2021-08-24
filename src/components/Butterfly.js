@@ -1,13 +1,12 @@
 import React from 'react';
 
-const Butterfly = ({showProject}) => {
+const Butterfly = () => {
   return(
     <div className="project">
       <div className="project_content">
         <p>
           preparing...
         </p>
-        <button onClick={showProject} >previous</button>
       </div>
     </div>
   )
