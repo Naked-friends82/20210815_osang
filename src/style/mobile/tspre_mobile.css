@@ -42,6 +42,8 @@
     top: -54px;
     margin: 0 3px;
     background-color: var(--color-gray);
+    -webkit-appearance: none;
+    appearance: none;
   }
   .exit_btn {
     margin-right: 12px;
@@ -91,6 +93,8 @@
     top: -54px;
     margin: 0 3px;
     background-color: var(--color-gray);
+    -webkit-appearance: none;
+    appearance: none;
   }
   .exit_btn {
     margin-right: 12px;
