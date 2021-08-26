@@ -6,11 +6,15 @@ import "../style/mobile/navig_mobile.css";
 
 
 const Navig = () => {
-  const [navToggle, setNavToggle] = useState(false);
+  const [navigVisi, setNavigVisi] = useState(false);
 
-  const nav_toggle = () => {
-    setNavToggle(!navToggle);
+  const showNav = () => {
+    setNavigVisi(!navigVisi);
+    console.log(navigVisi);
   }
+  const nothing = () => {
+  }
+
 
   return(
     <header className="navBox">
@@ -19,19 +23,29 @@ const Navig = () => {
           <img className="mainLogo" src={mainLogo} alt="osangmain Main Logo" />
         </Link>
       </div>
-        <i className="fas fa-bars nav_btn" onClick={nav_toggle}></i>
-      <nav className={navToggle? "navBox_2__nav": "navBox_2__nav invi"}>
-          <Link className="link" to="/" onClick={nav_toggle}>Work</Link>
-          <Link className="link" to="/about" onClick={nav_toggle}>About</Link>
-          <Link className="link" to="/news" onClick={nav_toggle}>News</Link>
-          <Link className="link" to="/contact" onClick={nav_toggle}>Contact</Link>
-          <a className="link favicon" href="https://www.instagram.com/osangmin_studio/">
-            <i className="fab fa-instagram" />
-          </a>
-      </nav>
+      <i className="fas fa-bars nav_btn" onClick={showNav}></i>
 
+
+      <div className={navigVisi? "navBox_2__nav" : "navBox_2__nav nav_mobile"}>
+        <div className="forCol">
+          <Link className="link" to="/" onClick={navigVisi? showNav: nothing} >Work</Link>
+          <Link className="link" to="/about" onClick={navigVisi? showNav: nothing} >About</Link>
+          <Link className="link" to="/news" onClick={navigVisi? showNav: nothing} >News</Link>
+          <Link className="link" to="/contact" onClick={navigVisi? showNav: nothing} >Contact</Link>
+          <a className="link favicon" href="https://www.instagram.com/osangmin_studio/">
+            <span className="mobile insta_mobile">Instagram</span>
+            <i className="fab fa-instagram insta_web" />
+          </a>
+          <div className="nav_back"></div>
+        </div>
+      </div>
     </header>
   )
 }
 
 export default Navig;
+
+
+
+
+

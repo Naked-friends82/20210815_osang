@@ -34,7 +34,7 @@
   }
   .image_reck__btn .image_btn {
     padding: 20px 10px;
-    font-size: var(--font-regular);
+    font-size: var(--font-medium);
   }
   .image_reck__dot .dot {
     height: 10px;

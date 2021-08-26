@@ -7,6 +7,9 @@
 .mainLogo {
   height: 32px;
 }
+.nav_btn {
+  display: none;
+}
 .navBox .navBox_2__nav {
   position: fixed;
   top: 24px;
@@ -23,6 +26,13 @@
   margin-left: 4px;
   margin-right: 0px;
 }
-.nav_btn {
+.insta_web {
+  display: inline;
+}
+.insta_mobile {
   display: none;
 }
+.nav_back {
+  display: none;
+}
+/* ---------- */
