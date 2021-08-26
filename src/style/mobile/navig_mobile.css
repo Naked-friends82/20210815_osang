@@ -38,9 +38,6 @@
     margin-left: 0px;
     z-index: 3;
   }
-  .insta_web {
-    display: none;
-  }
   .insta_mobile {
     display: inline;
     position: relative;
@@ -98,9 +95,6 @@
     padding: 4px;
     margin-left: 0px;
     z-index: 3;
-  }
-  .insta_web {
-    display: none;
   }
   .insta_mobile {
     display: inline;

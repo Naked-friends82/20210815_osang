@@ -33,8 +33,8 @@ const Navig = () => {
           <Link className="link" to="/news" onClick={navigVisi? showNav: nothing} >News</Link>
           <Link className="link" to="/contact" onClick={navigVisi? showNav: nothing} >Contact</Link>
           <a className="link favicon" href="https://www.instagram.com/osangmin_studio/">
-            <span className="mobile insta_mobile">Instagram</span>
-            <i className="fab fa-instagram insta_web" />
+            {/* <span className="mobile insta_mobile">Instagram</span> */}
+            <i className="fab fa-instagram insta_mobile" />
           </a>
           <div className="nav_back"></div>
         </div>
