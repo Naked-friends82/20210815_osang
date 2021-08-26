@@ -41,6 +41,7 @@
     width: 10px;
     top: -54px;
     margin: 0 3px;
+    background-color: var(--color-gray);
   }
   .exit_btn {
     margin-right: 12px;
@@ -89,6 +90,7 @@
     width: 10px;
     top: -54px;
     margin: 0 3px;
+    background-color: var(--color-gray);
   }
   .exit_btn {
     margin-right: 12px;
