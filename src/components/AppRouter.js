@@ -17,27 +17,13 @@ return (
   <Router>
     <Navig />
     <Switch>
-      <Route exact path="/">
-        <Work />
-      </Route>
-      <Route exact path="/work_thankspressure">
-        <ThanksPressure />
-      </Route>
-      <Route exact path="/work_papa">
-        <Papa />
-      </Route>
-      <Route exact path="/work_butterfly">
-        <Butterfly />
-      </Route>
-      <Route exact path="/about">
-        <About />
-      </Route>
-      <Route exact path="/news">
-        <News />
-      </Route>
-      <Route exact path="/contact">
-        <Contact />
-      </Route>
+      <Route exact path="/" component={Work} />
+      <Route exact path="/work_thankspressure" component={ThanksPressure} />
+      <Route exact path="/work_papa" component={Papa} />
+      <Route exact path="/work_butterfly" component={Butterfly} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/news" component={News} />
+      <Route exact path="/contact" component={Contact} />
       <Redirect from="*" to="/" />
     </Switch>
     <Footer />
