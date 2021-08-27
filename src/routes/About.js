@@ -8,7 +8,7 @@ const About = () => {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/work_about');
+    history.push('/about');
   },[]);
 
   return(

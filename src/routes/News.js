@@ -6,7 +6,7 @@ const News = () => {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/work_news');
+    history.push('/news');
   },[]);
 
   return(
