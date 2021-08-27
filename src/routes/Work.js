@@ -9,7 +9,7 @@ const Work = () => {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/work');
+    history.push('/');
   },[]);
 
   return(
