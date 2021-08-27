@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import profileImg from '../asset/profile.jpg';
 import '../style/web/about.css';
 import '../style/mobile/about_mobile.css';
 
 const About = () => {
+  const history = useHistory();
+
+  useEffect(() => {
+    history.push('/work_about');
+  },[]);
+
   return(
     <section className="section_about">
       <div className="section_about__box">
