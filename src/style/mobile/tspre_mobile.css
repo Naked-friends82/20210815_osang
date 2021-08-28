@@ -37,7 +37,6 @@
     font-size: var(--font-max);
   }
   .image_reck__dot .dot {
-    appearance: none;
     -webkit-appearance: none;
     height: 10px;
     width: 10px;
@@ -88,7 +87,6 @@
     font-size: var(--font-regular);
   }
   .image_reck__dot .dot {
-    appearance: none;
     -webkit-appearance: none;
     height: 10px;
     width: 10px;
