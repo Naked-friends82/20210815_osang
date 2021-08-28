@@ -29,7 +29,6 @@
 /* universe */
 * {
   box-sizing: border-box;
-  appearance: none;
   -webkit-appearance: none;
 }
 body {
