@@ -1,13 +1,7 @@
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
 import "../style/web/news.css";
 
 const News = () => {
-  const history = useHistory();
-
-  useEffect(() => {
-    history.push('/news');
-  },[]);
 
   return(
     <section className="section_news">

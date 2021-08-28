@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import tpMainImg from '../asset/tpMainImg.jpg';
 import tp_detail_1 from '../asset/tp_detail_1.jpg';
 import tp_detail_2 from '../asset/tp_detail_2.jpg';
@@ -10,7 +10,6 @@ import tp_demontr_1 from '../asset/tp_demonstr_1.jpg';
 import tp_demontr_2 from '../asset/tp_demonstr_2.jpg';
 import "../style/web/tspre.css";
 import "../style/mobile/tspre_mobile.css";
-import { useHistory } from 'react-router-dom';
 
 
 const detail_RECK = [
@@ -25,12 +24,6 @@ const detail_RECK = [
 ];
 
 const ThanksPressure = () => {
-  const history = useHistory();
-
-  useEffect(() => {
-    history.push('/work_thankspressure');
-  },[]);
-  
   const [currentDetail, setCurrentDetail] = useState(0);
 
   const shiftDetail = (e) => {
@@ -49,6 +42,8 @@ const ThanksPressure = () => {
     } else if(value === "7"){setCurrentDetail(7);
     }
   };
+
+
   return(
     <div className="project">
       <div className="project_content">

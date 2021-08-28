@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
 
 
 const Papa = () => {
-  const history = useHistory();
 
-  useEffect(() => {
-    history.push('/work_papa');
-  },[]);
-  
   return(
     <div className="project">
       <div className="project_content">

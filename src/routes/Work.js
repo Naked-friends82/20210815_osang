@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import tpIndex from '../asset/tp_index.jpg';
 import "../style/web/work.css";
 import "../style/mobile/work_mobile.css";
 
 
 const Work = () => {
-  const history = useHistory();
-
-  useEffect(() => {
-    history.push('/');
-  },[]);
 
   return(
     <section className="section_work">
