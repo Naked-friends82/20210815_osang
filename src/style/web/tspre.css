@@ -58,7 +58,6 @@
   background-color: var(--color-darkgray);
 }
 .image_reck__dot .dot {
-  -webkit-appearance: none;
   height: 15px;
   width: 15px;
   position: relative;
@@ -67,6 +66,7 @@
   border: none;
   border-radius: 50%;
   transition: 0.3s ease;
+  background-color: var(--color-gray);
 }
 .image_reck__dot .dot:hover {
   background-color: var(--color-darkgray);
