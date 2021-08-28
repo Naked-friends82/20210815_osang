@@ -29,7 +29,6 @@
 /* universe */
 * {
   box-sizing: border-box;
-  -webkit-appearance: none;
 }
 body {
   margin: 0px;
@@ -44,4 +43,12 @@ h2 {
 }
 p {
   margin: 0px;
+}
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
 }

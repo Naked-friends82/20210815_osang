@@ -25,7 +25,7 @@ const detail_RECK = [
 
 const ThanksPressure = () => {
   const [currentDetail, setCurrentDetail] = useState(0);
-
+  
   const shiftDetail = (e) => {
     const {target: {value}} = e;
     if(value === "prev" && currentDetail !== 0){
