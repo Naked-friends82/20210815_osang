@@ -37,13 +37,13 @@
     font-size: var(--font-max);
   }
   .image_reck__dot .dot {
+    appearance: none;
+    -webkit-appearance: none;
     height: 10px;
     width: 10px;
     top: -54px;
     margin: 0 3px;
     background-color: var(--color-gray);
-    -webkit-appearance: none;
-    appearance: none;
   }
   .exit_btn {
     margin-right: 12px;
@@ -88,13 +88,13 @@
     font-size: var(--font-regular);
   }
   .image_reck__dot .dot {
+    appearance: none;
+    -webkit-appearance: none;
     height: 10px;
     width: 10px;
     top: -54px;
     margin: 0 3px;
     background-color: var(--color-gray);
-    -webkit-appearance: none;
-    appearance: none;
   }
   .exit_btn {
     margin-right: 12px;

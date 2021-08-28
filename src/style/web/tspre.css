@@ -58,6 +58,8 @@
   background-color: var(--color-darkgray);
 }
 .image_reck__dot .dot {
+  appearance: none;
+  -webkit-appearance: none;
   height: 15px;
   width: 15px;
   position: relative;
