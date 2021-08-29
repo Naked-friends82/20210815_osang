@@ -14,7 +14,7 @@ import Butterfly from './Butterfly';
 const AppRouter = () => {
   
 return (
-  <Router forceRefresh={true}>
+  <Router>
     <Navig />
     <Switch>
       <Route exact path="/" component={Work} />
