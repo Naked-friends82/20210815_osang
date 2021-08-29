@@ -14,7 +14,7 @@ import Butterfly from './Butterfly';
 const AppRouter = () => {
   
 return (
-  <Router>
+  <Router forceRefresh={true}>
     <Navig />
     <Switch>
       <Route exact path="/" component={Work} />
@@ -24,7 +24,6 @@ return (
       <Route exact path="/about" component={About} />
       <Route exact path="/news" component={News} />
       <Route exact path="/contact" component={Contact} />
-      <Redirect from="*" to="/" />
     </Switch>
     <Footer />
   </Router>
