@@ -13,6 +13,11 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "bable-loader": "^0.0.1-security",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.8.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
