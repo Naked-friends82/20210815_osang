@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import tpIndex from '../asset/tp_index.jpg';
+import tpIndex from '../asset/thankspressure/tp_index.jpg';
+import paIndex from '../asset/papa/pa_index.jpg';
 import "../style/web/work.css";
 import "../style/mobile/work_mobile.css";
 
@@ -16,7 +17,7 @@ const Work = () => {
             </Link>
 
             <Link className="project_index" to='/work_papa'>
-              <img className="index_img" src={tpIndex} alt="PAPA" />
+              <img className="index_img" src={paIndex} alt="PAPA" />
               <h1 className="index_header">PAPA</h1>
             </Link>
 

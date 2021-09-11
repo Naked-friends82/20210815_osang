@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import tpMainImg from '../asset/tpMainImg.jpg';
-import tp_detail_1 from '../asset/tp_detail_1.jpg';
-import tp_detail_2 from '../asset/tp_detail_2.jpg';
-import tp_detail_3 from '../asset/tp_detail_3.jpg';
-import tp_detail_4 from '../asset/tp_detail_4.jpg';
-import tp_detail_5 from '../asset/tp_detail_5.jpg';
-import tp_detail_6 from '../asset/tp_detail_6.jpg';
-import tp_demontr_1 from '../asset/tp_demonstr_1.jpg';
-import tp_demontr_2 from '../asset/tp_demonstr_2.jpg';
+import tpMainImg from '../asset/thankspressure/tpMainImg.jpg';
+import tp_detail_1 from '../asset/thankspressure/tp_detail_1.jpg';
+import tp_detail_2 from '../asset/thankspressure/tp_detail_2.jpg';
+import tp_detail_3 from '../asset/thankspressure/tp_detail_3.jpg';
+import tp_detail_4 from '../asset/thankspressure/tp_detail_4.jpg';
+import tp_detail_5 from '../asset/thankspressure/tp_detail_5.jpg';
+import tp_detail_6 from '../asset/thankspressure/tp_detail_6.jpg';
+import tp_demontr_1 from '../asset/thankspressure/tp_demonstr_1.jpg';
+import tp_demontr_2 from '../asset/thankspressure/tp_demonstr_2.jpg';
 import "../style/web/tspre.css";
 import "../style/mobile/tspre_mobile.css";
 
@@ -73,8 +73,6 @@ const ThanksPressure = () => {
             <button className="dot" value="6" onClick={shiftDetail}></button>
             <button className="dot" value="7" onClick={shiftDetail}></button>
           </div>
-          
-          
         </div>
       </div>
   </div>
