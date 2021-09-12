@@ -1,4 +1,8 @@
 /* navig */
+.navBox {
+  position: relative;
+  z-index: 1;
+}
 .navBox_1 {
   position: fixed;
   top: 24px;

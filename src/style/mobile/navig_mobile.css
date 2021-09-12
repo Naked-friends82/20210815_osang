@@ -12,7 +12,7 @@
     top: 16px;
     right: 12px;
     font-size: var(--font-sangmax);
-    z-index: 3;
+    z-index: 2;
   }
   .navBox .navBox_2__nav {
     position: fixed;
@@ -31,12 +31,12 @@
     padding: 5px 6px;
     font-size: var(--font-medium);
     color: var(--color-gray);
-    z-index: 3;
+    z-index: 2;
   }
   .navBox_2__nav .favicon {
     padding: 4px;
     margin-left: 0px;
-    z-index: 3;
+    z-index: 2;
   }
   .insta_mobile {
     display: inline;
@@ -53,64 +53,8 @@
     background-color: var(--color-dddarkgray);
     opacity: 70%;
     -webkit-opacity: 0.7;
-    z-index: 2;
+    z-index: 1;
   }
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .navBox_1 {
-    top: 16px;
-    left: 12px;
-  }
-  .mainLogo {
-    height: 24px;
-  }
-  .nav_btn {
-    display: inline;
-    position: fixed;
-    top: 16px;
-    right: 12px;
-    font-size: var(--font-sangmax);
-    z-index: 3;
-  }
-  .navBox .navBox_2__nav {
-    position: fixed;
-    top: 100px;
-    left: 12px;
-  }
-  .nav_mobile {
-    display: none;
-  }
-  .forCol {
-    display: flex;
-    flex-direction: column;
-  }
-  .navBox_2__nav .link {
-    margin: 2px 2px;
-    padding: 5px 6px;
-    font-size: var(--font-medium);
-    color: var(--color-gray);
-    z-index: 3;
-  }
-  .navBox_2__nav .favicon {
-    padding: 4px;
-    margin-left: 0px;
-    z-index: 3;
-  }
-  .insta_mobile {
-    display: inline;
-    position: relative;
-    left: 4px;
-  }
-  .nav_back {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-dddarkgray);
-    opacity: 70%;
-    -webkit-opacity: 0.7;
-    z-index: 2;
-  }
 }
