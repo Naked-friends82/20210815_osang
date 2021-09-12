@@ -23,41 +23,43 @@ const pa_mood_RECK = [
 
 
 const Papa = () => {
-  const [currentDetail, setCurrentDetail] = useState(0);
+  const [currentMain, setCurrentMain] = useState(0);
+  const [currentMood, setCurrentMood] = useState(0);
 
-
-  const shiftDetail = (e) => {
+  const shiftCurrentMain = (e) => {
     const {target: {value}} = e;
-    if(value === "prev" && currentDetail !== 0){
-      setCurrentDetail(currentDetail -1);
-    } else if(value === "next" && currentDetail !== 3){
-      setCurrentDetail(currentDetail +1);
-    } else if(value === "0"){setCurrentDetail(0);
-    } else if(value === "1"){setCurrentDetail(1);
-    } else if(value === "2"){setCurrentDetail(2);
-    } else if(value === "3"){setCurrentDetail(3);
+    if(value === "prev" && currentMain !== 0){
+      setCurrentMain(currentMain -1);
+    } else if(value === "next" && currentMain !== 2){
+      setCurrentMain(currentMain +1);
+    } else if(value === "0"){setCurrentMain(0);
+    } else if(value === "1"){setCurrentMain(1);
+    } else if(value === "2"){setCurrentMain(2);
     }
   };
-  const shiftDetailMain = (e) => {
+
+  const shiftCurrentMood = (e) => {
     const {target: {value}} = e;
-    if(value === "prev" && currentDetail !== 0){
-      setCurrentDetail(currentDetail -1);
-    } else if(value === "next" && currentDetail !== 2){
-      setCurrentDetail(currentDetail +1);
-    } else if(value === "0"){setCurrentDetail(0);
-    } else if(value === "1"){setCurrentDetail(1);
-    } else if(value === "2"){setCurrentDetail(2);
+    if(value === "prev" && currentMood !== 0){
+      setCurrentMood(currentMood -1);
+    } else if(value === "next" && currentMood !== 3){
+      setCurrentMood(currentMood +1);
+    } else if(value === "0"){setCurrentMood(0);
+    } else if(value === "1"){setCurrentMood(1);
+    } else if(value === "2"){setCurrentMood(2);
+    } else if(value === "3"){setCurrentMood(3);
     }
   };
+
 
   return(
     <div className="project">
       <div className="project_content">
       <div className="main_reck">
-          <img className="main_reck__imgs" src={pa_main_RECK[currentDetail]} alt="PAPA mood" />
+          <img className="main_reck__imgs" src={pa_main_RECK[currentMain]} alt="PAPA mood" />
             <div className="main_reck__btn">
-              <button className="main_btn" onClick={shiftDetailMain} value="prev" >&#10094;</button>
-              <button className="main_btn" onClick={shiftDetailMain} value="next" >&#10095;</button>
+              <button className="main_btn" onClick={shiftCurrentMain} value="prev" >&#10094;</button>
+              <button className="main_btn" onClick={shiftCurrentMain} value="next" >&#10095;</button>
             </div>
           {/* <div className="image_reck__dot">
             <button className="dot" value="0" onClick={shiftDetailMain}></button>
@@ -71,16 +73,16 @@ const Papa = () => {
           “My dad came home once a week because of work. I was rarely able to see him due to school when he comes. So, I wanted to give him a special object which makes him recalling our memories. With this watering can, I hope he finds a small pleasure while watering the plants.” says Sangmin.
         </p>
         <div className="image_reck">
-          <img className="image_reck__imgs" src={pa_mood_RECK[currentDetail]} alt="PAPA mood" />
+          <img className="image_reck__imgs" src={pa_mood_RECK[currentMood]} alt="PAPA mood" />
           <div className="image_reck__btn">
-            <button className="image_btn" onClick={shiftDetail} value="prev" >&#10094;</button>
-            <button className="image_btn" onClick={shiftDetail} value="next" >&#10095;</button>
+            <button className="image_btn" onClick={shiftCurrentMood} value="prev" >&#10094;</button>
+            <button className="image_btn" onClick={shiftCurrentMood} value="next" >&#10095;</button>
           </div>
           <div className="image_reck__dot">
-            <button className="dot" value="0" onClick={shiftDetail}></button>
-            <button className="dot" value="1" onClick={shiftDetail}></button>
-            <button className="dot" value="2" onClick={shiftDetail}></button>
-            <button className="dot" value="3" onClick={shiftDetail}></button>
+            <button className="dot" value="0" onClick={shiftCurrentMood}></button>
+            <button className="dot" value="1" onClick={shiftCurrentMood}></button>
+            <button className="dot" value="2" onClick={shiftCurrentMood}></button>
+            <button className="dot" value="3" onClick={shiftCurrentMood}></button>
           </div>
         </div>
       </div>
