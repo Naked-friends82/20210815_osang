@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import tpIndex from '../asset/thankspressure/tp_index.jpg';
 import paIndex from '../asset/papa/pa_index.jpg';
+import buttIndex from '../asset/butterfly/butt_index.jpg';
 import "../style/web/work.css";
 import "../style/mobile/work_mobile.css";
 
@@ -22,7 +23,7 @@ const Work = () => {
             </Link>
 
             <Link className="project_index" to='/work_butterfly'>
-              <img className="index_img" src={tpIndex} alt="Butterfly" />
+              <img className="index_img" src={buttIndex} alt="Butterfly" />
               <h1 className="index_header">Butterfly</h1>
             </Link>
           </div>
