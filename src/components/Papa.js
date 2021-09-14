@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import pa_main_1 from '../asset/papa/pa_main_1.jpg';
 import pa_main_2 from '../asset/papa/pa_main_2.jpg';
 import pa_main_3 from '../asset/papa/pa_main_3.jpg';
-import pa_mood_1 from '../asset/papa/pa_mood_1.jpg';
-import pa_mood_2 from '../asset/papa/pa_mood_2.jpg';
-import pa_mood_3 from '../asset/papa/pa_mood_3.jpg';
-import pa_mood_4 from '../asset/papa/pa_mood_4.jpg';
+import pa_mood_1 from '../asset/papa/pa_mood_v2_1.jpg';
+import pa_mood_2 from '../asset/papa/pa_mood_v2_2.jpg';
+import pa_mood_3 from '../asset/papa/pa_mood_v2_3.jpg';
+import pa_mood_4 from '../asset/papa/pa_mood_v2_4.jpg';
+import pa_mood_5 from '../asset/papa/pa_mood_v2_5.jpg';
 import "../style/web/papa.css";
 import "../style/mobile/papa_mobile.css";
 
@@ -19,6 +20,7 @@ const pa_mood_RECK = [
   pa_mood_2,
   pa_mood_3,
   pa_mood_4,
+  pa_mood_5,
 ];
 
 
@@ -42,12 +44,13 @@ const Papa = () => {
     const {target: {value}} = e;
     if(value === "prev" && currentMood !== 0){
       setCurrentMood(currentMood -1);
-    } else if(value === "next" && currentMood !== 3){
+    } else if(value === "next" && currentMood !== 4){
       setCurrentMood(currentMood +1);
     } else if(value === "0"){setCurrentMood(0);
     } else if(value === "1"){setCurrentMood(1);
     } else if(value === "2"){setCurrentMood(2);
     } else if(value === "3"){setCurrentMood(3);
+    } else if(value === "4"){setCurrentMood(4);
     }
   };
 
@@ -84,6 +87,7 @@ const Papa = () => {
             <button className="dot" value="1" onClick={shiftCurrentMood}></button>
             <button className="dot" value="2" onClick={shiftCurrentMood}></button>
             <button className="dot" value="3" onClick={shiftCurrentMood}></button>
+            <button className="dot" value="4" onClick={shiftCurrentMood}></button>
           </div>
         </div>
       </div>
