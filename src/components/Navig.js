@@ -4,8 +4,9 @@ import mainLogo from '../asset/mainLogo.png'
 import "../style/web/navig.css";
 import "../style/mobile/navig_mobile.css";
 
+const INSTA_URL = 'https://www.instagram.com/osangmin_studio/';
 
-const Navig = () => {
+const Navig = ({goToRightUrl}) => {
   const [navigVisi, setNavigVisi] = useState(false);
 
   const showNav = () => {
@@ -19,21 +20,21 @@ const Navig = () => {
   return(
     <header className="navBox">
       <div className="navBox_1">
-        <Link className="logo" to='/'>
+        <span className="link logo" data-url="/" onClick={goToRightUrl}>
           <img className="mainLogo" src={mainLogo} alt="osangmain Main Logo" />
-        </Link>
+        </span>
       </div>
       <i className="fas fa-bars nav_btn" onClick={showNav}></i>
 
 
       <div className={navigVisi? "navBox_2__nav" : "navBox_2__nav nav_mobile"}>
         <div className="forCol">
-          <Link className="link" to="/" onClick={navigVisi? showNav: nothing} >Work</Link>
-          <Link className="link" to="/about" onClick={navigVisi? showNav: nothing} >About</Link>
-          <Link className="link" to="/news" onClick={navigVisi? showNav: nothing} >News</Link>
-          <Link className="link" to="/contact" onClick={navigVisi? showNav: nothing} >Contact</Link>
-          <a className="link favicon" href="https://www.instagram.com/osangmin_studio/">
-            {/* <span className="mobile insta_mobile">Instagram</span> */}
+          <span className="link" data-url="/" onClick={navigVisi? showNav: goToRightUrl} >Work</span>
+          <span className="link" data-url="/about" onClick={navigVisi? showNav: goToRightUrl} >About</span>
+          <span className="link" data-url="/news" onClick={navigVisi? showNav: goToRightUrl} >News</span>
+          <span className="link" data-url="/contact" onClick={navigVisi? showNav: goToRightUrl} >Contact</span>
+
+          <a className="link favicon" href={INSTA_URL}>
             <i className="fab fa-instagram insta_mobile" />
           </a>
           <div className="nav_back"></div>
