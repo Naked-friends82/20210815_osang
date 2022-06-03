@@ -7,25 +7,25 @@ import "../style/web/work.css";
 import "../style/mobile/work_mobile.css";
 
 
-const Work = () => {
+const Work = ({goToRightUrl}) => {
 
   return(
     <section className="section_work">
           <div className="section_work__projectReck">
-            <Link className="project_index" to='/work_thankspressure'>
+            <span className="project_index link" data-url='/work_thankspressure' onClick={goToRightUrl}>
               <img className="index_img" src={tpIndex} alt="Thankspressure" />
               <h1 className="index_header">Thankspressure</h1>
-            </Link>
+            </span>
 
-            <Link className="project_index" to='/work_papa'>
+            <span className="project_index link" data-url='/work_papa' onClick={goToRightUrl}>
               <img className="index_img" src={paIndex} alt="PAPA" />
               <h1 className="index_header">PAPA</h1>
-            </Link>
+            </span>
 
-            <Link className="project_index" to='/work_butterfly'>
+            <span className="project_index link" data-url='/work_butterfly' onClick={goToRightUrl}>
               <img className="index_img" src={buttIndex} alt="Butterfly" />
               <h1 className="index_header">Butterfly</h1>
-            </Link>
+            </span>
           </div>
     </section>
   )
