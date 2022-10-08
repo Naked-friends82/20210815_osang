@@ -12,7 +12,7 @@ const About = () => {
           <img className="profile_img" src={profileImg} alt="profile Osangmin" />
           <div className="profile_content">
             <h2 className="profile_header">SANGMIN OH <span>(Born 1994, Kr)</span></h2>
-            <p className="profile_detail">2017~ Design Academy Eindhoven (NL) <span className="remove"> - </span>Public and Private</p>
+            <p className="profile_detail">2017 ~ 2022 BA - Design Academy Eindhoven (NL)</p>
           </div>
         </div>
         <div className="description">
