@@ -6,6 +6,7 @@ import kn_detail_3 from '../asset/knitted_light/knitted_light_3.jpg';
 import kn_detail_4 from '../asset/knitted_light/knitted_light_4.jpg';
 import kn_detail_5 from '../asset/knitted_light/knitted_light_5.jpg';
 import kn_detail_6 from '../asset/knitted_light/knitted_light_6.jpg';
+import kn_detail_7 from '../asset/knitted_light/knitted_light_7.jpg';
 import "../style/web/tspre.css";
 import "../style/mobile/tspre_mobile.css";
 
@@ -17,6 +18,7 @@ const detail_RECK = [
   kn_detail_4,
   kn_detail_5,
   kn_detail_6,
+  kn_detail_7,
 ];
 
 const ThanksPressure = () => {
@@ -26,7 +28,7 @@ const ThanksPressure = () => {
     const {target: {value}} = e;
     if(value === "prev" && currentDetail !== 0){
       setCurrentDetail(currentDetail -1);
-    } else if(value === "next" && currentDetail !== 5){
+    } else if(value === "next" && currentDetail !== 6){
       setCurrentDetail(currentDetail +1);
     } else if(value === "0"){setCurrentDetail(0);
     } else if(value === "1"){setCurrentDetail(1);
@@ -34,6 +36,7 @@ const ThanksPressure = () => {
     } else if(value === "3"){setCurrentDetail(3);
     } else if(value === "4"){setCurrentDetail(4);
     } else if(value === "5"){setCurrentDetail(5);
+    } else if(value === "6"){setCurrentDetail(6);
     }
   };
 
@@ -65,8 +68,10 @@ const ThanksPressure = () => {
           beauty and dimension. On removing the light, in darkness, the textile glows, it produces
           its own light resembling the glowing coral reefs, we observe the patterns and shapes
           again with nuance.<br /><br />
-          ‘Knitted Light’ presents the phenomenal beauty of light through objects composed of
-          textile and light, it opens new interactive material dimensions.
+          Furthermore, recently coral reefs are losing their own colors and being hard to glow due
+          to the rising temperature of seawater. I hope ‘Knitted Light’ not only presents the
+          phenomenal beauty of light through objects composed of textile materials, But also
+          enlightens a new reflection of the beauty of our nature.
         </p>
         <div className="image_reck">
           <img className="image_reck__imgs" src={detail_RECK[currentDetail]} alt="thankspressure detail" />
@@ -81,6 +86,7 @@ const ThanksPressure = () => {
             <button className="dot" value="3" onClick={shiftDetail}></button>
             <button className="dot" value="4" onClick={shiftDetail}></button>
             <button className="dot" value="5" onClick={shiftDetail}></button>
+            <button className="dot" value="6" onClick={shiftDetail}></button>
           </div>
         </div>
       </div>
