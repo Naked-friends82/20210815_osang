@@ -32,7 +32,7 @@ const Navig = () => {
           <a className="link favicon" href={INSTA_URL}>
             <i className="fab fa-instagram insta_mobile" />
           </a>
-          <div className="nav_back"></div>
+          <div className="nav_back" onClick={showNav} />
         </div>
       </div>
     </header>

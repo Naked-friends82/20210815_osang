@@ -24,26 +24,37 @@
   /* Google */
   --typo-nanum: "Nanum Myeongjo", serif;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 
 /* universe */
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0px;
+  overflow-y: scroll;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* only Head on project_content */
 h1 {
   margin: 0px;
 }
+
 /* only name on About */
 h2 {
   margin: 0px;
 }
+
 p {
   margin: 0px;
 }
+
 button {
   appearance: none;
   -moz-appearance: none;

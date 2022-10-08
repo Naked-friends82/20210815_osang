@@ -3,39 +3,40 @@
   position: relative;
   z-index: 1;
 }
+
 .navBox_1 {
   position: fixed;
   top: 24px;
   left: 24px;
 }
+
 .mainLogo {
   height: 32px;
 }
+
 .nav_btn {
   display: none;
 }
+
 .navBox .navBox_2__nav {
   position: fixed;
   top: 24px;
   right: 24px;
   font-family: var(--typo-nanum);
 }
+
 .navBox_2__nav .link {
   margin: 0px 16px;
   font-size: var(--font-regular);
   color: var(--color-black);
   text-decoration: none;
 }
+
 .navBox_2__nav .favicon {
   margin-left: 4px;
   margin-right: 0px;
 }
-/* .insta_web {
-  display: inline;
-}
-.insta_mobile {
-  display: none;
-} */
+
 .nav_back {
   display: none;
 }
