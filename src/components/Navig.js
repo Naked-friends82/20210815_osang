@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom'
-import mainLogo from '../asset/mainLogo.png'
+import mainLogo from '../asset/logo.jpg'
 import "../style/web/navig.css";
 import "../style/mobile/navig_mobile.css";
 
