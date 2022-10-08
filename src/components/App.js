@@ -7,6 +7,7 @@ import News from '../routes/News';
 import Contact from '../routes/Contact';
 import Footer from './footer';
 import ThanksPressure from '../components/ThanksPressure';
+import KnittedLight from '../components/KnittedLight';
 import Papa from './Papa';
 import Butterfly from './Butterfly';
 import "../style/web/univ.css";
@@ -20,6 +21,7 @@ function App() {
         <Navig />
         <Routes>
           <Route path="/" element={<Work />} />
+          <Route path="/work_knitted_light" element={<KnittedLight />} />
           <Route path="/work_thankspressure" element={<ThanksPressure />} />
           <Route path="/work_papa" element={<Papa />} />
           <Route path="/work_butterfly" element={<Butterfly />} />
