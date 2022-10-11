@@ -1,5 +1,5 @@
-This is Osangmin studio website made by Naked Friends
+### This is Sangmin Oh studio website made by Naked Friends
 
-Osangmin studio: Osangminstudio@gmail.com
 
-Naked Friends: nfs82young@gmail.com
+- Sangmin Oh: Osangminstudio@gmail.com  
+- Naked Friends: nfs82young@gmail.com
