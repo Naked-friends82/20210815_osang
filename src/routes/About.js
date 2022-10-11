@@ -17,10 +17,10 @@ const About = () => {
         </div>
         <div className="description">
           <p className="description_1">
-            Osangmin Studio is an art and design studio established in 2021 by Sangmin Oh based in Netherlands and Korea. He is influenced by sculptural crafts, color of explored materials and architectural elements.
+            Sangmin Oh established his own studio in 2021 based in Netherlands and Korea. He is influenced by sculptural crafts, textile techniques, color of explored materials and architectural elements.
           </p>
           <p className="description_2">
-            The studio focuses on observing trivial and small empty spaces, aside from spaces that are displayed amongst people's daily hectic movements. “I want to fill up those brief, empty spaces. They can be filled up with emotional or visual stories or even with new realizations.”
+            The studio focuses on observing trivial and small empty spaces, aside from spaces that are displayed amongst people's daily hectic movements. “I want to fill up those brief, empty spaces. They can be filled up with emotional or visual stories and even with new realizations.”
           </p>
         </div>
       </div>
