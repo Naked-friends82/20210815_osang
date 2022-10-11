@@ -69,7 +69,7 @@ const ThanksPressure = () => {
           its own light resembling the glowing coral reefs, we observe the patterns and shapes
           again with nuance.<br /><br />
           Furthermore, recently coral reefs are losing their own colors and being hard to glow due
-          to the rising temperature of seawater. I hope ‘Knitted Light’ not only presents the
+          to the rising temperature of seawater. Sangmin hope ‘Knitted Light’ not only presents the
           phenomenal beauty of light through objects composed of textile materials, But also
           enlightens a new reflection of the beauty of our nature.
         </p>
