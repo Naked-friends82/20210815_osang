@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navig from './Navig';
 import Work from '../routes/Work';
 import About from '../routes/About';
-import News from '../routes/News';
+import Press from '../routes/Press';
 import Contact from '../routes/Contact';
 import Footer from './footer';
 import ThanksPressure from '../components/ThanksPressure';
@@ -26,7 +26,7 @@ function App() {
           <Route path="/work_papa" element={<Papa />} />
           <Route path="/work_butterfly" element={<Butterfly />} />
           <Route path="/about" element={<About />} />
-          <Route path="/news" element={<News />} />
+          <Route path="/press" element={<Press />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

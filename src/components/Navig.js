@@ -27,7 +27,7 @@ const Navig = () => {
         <div className="forCol">
           <Link className="link" to='/'>Work</Link>
           <Link className="link" to='/about'>About</Link>
-          <Link className="link" to='/news'>Press</Link>
+          <Link className="link" to='/press'>Press</Link>
           <Link className="link" to='/contact'>Contact</Link>
           <a className="link favicon" href={INSTA_URL}>
             <i className="fab fa-instagram insta_mobile" />
