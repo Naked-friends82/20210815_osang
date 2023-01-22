@@ -10,6 +10,8 @@ import press_07 from '../asset/press/press_07.jpg';
 import press_08 from '../asset/press/press_08.jpg';
 import press_09 from '../asset/press/press_09.jpg';
 import "../style/web/press.css";
+import "../style/mobile/press_mobile.css";
+
 
 const Press = () => {
 
@@ -69,7 +71,6 @@ const Press = () => {
       imgSrc: press_01,
     },
   ];
-
 
   return(
     <section className="section_press">
