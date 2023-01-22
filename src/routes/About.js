@@ -23,6 +23,31 @@ const About = () => {
             The studio focuses on observing trivial and small empty spaces, aside from spaces that are displayed amongst people's daily hectic movements. “I want to fill up those brief, empty spaces. They can be filled up with emotional or visual stories and even with new realizations.”
           </p>
         </div>
+        <div className="cv_section">
+          <h3>EXHIBITION</h3>
+          <ul>
+            <li>2023 New year exhibition / Priveekollektie contemporary art design , Heusden , NL / 29 . Jan ~ 12 . Mar</li>
+            <li>2022 ‘If you have a headache, Take a samba’ / ETZ, Tilburg, NL / 04 . Nov ~ 24 . Feb</li>
+            <li>2022 ‘Table of curiosities’ Commissioned by Minyoung foodlab / YKSI, Eindhoven, NL / 22 ~ 30 . Oct</li>
+            <li>2022 Graduation Show, Dutch Design Week / Microtuin, Eindhoven, NL / 22 ~ 30 . Oct</li>
+            <li>2022 OBJECT Rotterdam / HAKA building, Rotterdam, NL / 20 ~ 22 . May</li>
+            <li>2021 Isola Design, Dutch Design Week / Schellens Fabriek, Eindhoven, NL / 16 ~ 24 . Oct</li>
+            <li>2020 Reframing Textile Minor exhibition / Textiel Museum, Tilburg, NL / 07 . Feb ~ 10 . Mar</li>
+          </ul>
+        </div>
+        <div className="cv_section">
+          <h3>AWARD</h3>
+          <ul>
+            <li>2022 Winner of SVTM Jong Talent Award 2022 at the Textiel Museum in Tilburg</li>
+          </ul>
+        </div>
+        <div className="cv_section">
+          <h3>LECTURE</h3>
+          <ul>
+            <li>2022 Textiel plus festival 2022</li>
+          </ul>
+        </div>
+        
       </div>
     </section>
   )
