@@ -4,6 +4,10 @@ import '../style/web/about.css';
 import '../style/mobile/about_mobile.css';
 
 const About = () => {
+  const awardUrl = "https://userfiles.mailswitch.nl/files/4300-b8a4fbc62595d2971b85afb3875f03a7.jpg";
+  const goUrl = () => {
+    window.open(awardUrl);
+  }
 
   return(
     <section className="section_about">
@@ -38,7 +42,7 @@ const About = () => {
         <div className="cv_section">
           <h3>AWARD</h3>
           <ul>
-            <li>2022 Winner of SVTM Jong Talent Award 2022 at the Textiel Museum in Tilburg</li>
+            <li className="underline" onClick={goUrl}>2022 Winner of SVTM Jong Talent Award 2022 at the Textiel Museum in Tilburg</li>
           </ul>
         </div>
         <div className="cv_section">

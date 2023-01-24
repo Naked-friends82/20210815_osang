@@ -76,3 +76,8 @@
   padding: 0px;
   color: var(--color-ddarkgray);
 }
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
