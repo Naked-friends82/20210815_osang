@@ -30,6 +30,11 @@ const About = () => {
         <div className="cv_section">
           <h3>EXHIBITION</h3>
           <ul>
+            <li>2023 Secrets of making III / Textiel Museum, Tilburg, NL / Jul . 2023 ~ Jun . 2024 (upcoming)</li>
+            <li>2023 Design fair / Het nieuwe instituut, Rotterdam, NL / 30 . Apr (upcoming) </li>
+            <li>2023 Alcova, Milan Design Week / Porta Vittoria Abattoir, Milan, IT / 17 ~ 23 . Apr (upcoming)</li>
+            <li>2023 Collectible 'Curated Section' / Avenue du Port, Brussels, BE / 9 ~ 12 . Mar</li>
+            <li>2023 Enlightened / Ammann gallery , Cologne, DE / 26 . Jan ~ 20 . Apr</li>
             <li>2023 New year exhibition / Priveekollektie contemporary art design , Heusden , NL / 29 . Jan ~ 12 . Mar</li>
             <li>2022 ‘If you have a headache, Take a samba’ / ETZ, Tilburg, NL / 04 . Nov ~ 24 . Feb</li>
             <li>2022 ‘Table of curiosities’ Commissioned by Minyoung foodlab / YKSI, Eindhoven, NL / 22 ~ 30 . Oct</li>
