@@ -1,0 +1,83 @@
+/* about */
+.section_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.section_about .section_about__box {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--typo-nanum);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.profile .profile_img {
+  width: 400px;
+  /* border: solid 2px var(--color-ddarkgray); */
+  margin-bottom: 16px;
+}
+
+.profile .profile_content {
+  width: 400px;
+}
+
+.profile .profile_content .profile_header {
+  font-size: var(--font-max);
+  margin-bottom: 6px;
+}
+
+.profile .profile_content .profile_header span {
+  font-size: var(--font-regular);
+}
+
+.profile .profile_content .profile_detail {
+  font-size: var(--font-small);
+  color: var(--color-darkgray);
+}
+
+.section_about .description {
+  margin: 0px 48px;
+  margin-bottom: 60px;
+  font-size: var(--font-medium);
+  line-height: 24px;
+}
+
+.description .description_1 {
+  margin-bottom: 32px;
+}
+
+.cv_section {
+  margin: 0px 48px;
+  margin-bottom: 30px;
+  font-size: var(--font-regular);
+  line-height: 24px;
+}
+
+.cv_section h3 {
+  font-weight: 500;
+  margin: 0px;
+  font-size: var(--font-medium);
+}
+
+.cv_section ul {
+  list-style: none;
+  padding: 0px;
+  color: var(--color-ddarkgray);
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}

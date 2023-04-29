@@ -1,0 +1,18 @@
+footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: var(--weight-light);
+  font-size: var(--font-min);
+  color: var(--color-darkgray);
+}
+
+.footer_welcome {
+  display: block;
+  margin-bottom: 30px;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-medium);
+  font-family: var(--typo-nanum);
+  color: var(--color-ddarkgray);
+  text-decoration: none;
+}
