@@ -1,0 +1,25 @@
+{
+  "isDone": true,
+  "data": {
+    "title": "Thankspressure",
+    "year": "2020",
+    "mainImg": "/asset/thankspressure/tp_main.jpg",
+    "detailImg": [
+      "/asset/thankspressure/tp_1.jpg",
+      "/asset/thankspressure/tp_2.jpg",
+      "/asset/thankspressure/tp_3.jpg",
+      "/asset/thankspressure/tp_4.jpg",
+      "/asset/thankspressure/tp_5.jpg",
+      "/asset/thankspressure/tp_6.jpg",
+      "/asset/thankspressure/tp_7.jpg",
+      "/asset/thankspressure/tp_8.jpg"
+    ],
+    "desc": [
+      "Together, through blending yarns, light and textiles can bring about magical stories. This coral reef knitting project is based on combining yarns that respond to light in different ways. The great beauty of textiles is in the many atmospheres, shapes, colors, harmonies, and effects that can be created through these unexpected yarn combinations together interacting with light.",
+      "Through collaboration with the Textile Museum, ‘Knitted Light’ looked to find out the sophisticated beauty of mixing textile materials through the technique of knitting. The thread called monofilament was selected, this has a reflective property, it produces a new texture when combined with light and mixed with various yarns. When the monofilaments meet flexible elastic yarns, the material shows a new type of formative fun of contraction and expansion, giving rise to various 3D-type knitting experiments.",
+      "The play of light and 3D shapes from the textile experiments are aesthetically inspired by the incredibly beautiful mystical atmosphere produced by the glow of the coral reefs beneath the sea.",
+      "The different sources of light that the textile can be exposed to realize many layers to its material. In daylight, it remains as a sculpture, we observe the natural colors, patterns, and textures. When exposed to an artificial light the textile changes to produce a new beauty and dimension. On removing the light, in darkness, the textile glows, it produces its own light resembling the glowing coral reefs, we observe the patterns and shapes again with nuance.",
+      "Furthermore, recently coral reefs are losing their own colors and being hard to glow due to the rising temperature of seawater. Sangmin hopes ‘Knitted Light’ not only presents the phenomenal beauty of light through objects composed of textile materials, But also enlightens a new reflection of the beauty of our nature."
+    ]
+  }
+}
