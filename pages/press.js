@@ -9,7 +9,7 @@ const Press = ({pressData}) => {
   return(
     <section className="section_press">
       <div className="press_content">
-        {data.map((each) => <EachPress data={each} />)}
+        {data.map((each,index) => <EachPress key={each.where} data={each} />)}
       </div>
     </section>
   )
