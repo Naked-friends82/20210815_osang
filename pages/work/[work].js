@@ -15,13 +15,12 @@ const WorkDetail = ({detailData}) => {
           <Image 
             className="project_mainImg" 
             src={data.mainImg} 
-            alt="Thankspressure main"
+            alt={`${data.title} main`}
             width={500}
             height={700}
             priority
             />
           <h1 className="project_header">{data.title} <span className="project_year">[{data.year}]</span></h1>
-          
           <div className="project_description">
             {data.desc.map((each,index) => <p key={index}>{each}</p>)}
           </div>

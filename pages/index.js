@@ -9,6 +9,7 @@ const Work = ({workThumbnailData}) => {
 			<div className="section_work__projectReck">
 			{data.map((each) => 
 				<Link 
+					key={each.project}
 					className="project_index link" 
 					href={each.url}>
 					<Image 
