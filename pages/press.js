@@ -1,15 +1,19 @@
 import EachPress from '../components/press/EachPress';
-// import "../style/web/press.css";
-// import "../style/mobile/press_mobile.css";
+import styles from '../styles/press.module.scss';
 
 
 const Press = ({pressData}) => {
   const {data} = pressData;
 
   return(
-    <section className="section_press">
-      <div className="press_content">
-        {data.map((each,index) => <EachPress key={each.where} data={each} />)}
+    <section className={styles.section}>
+      <div className={styles.content}>
+        {data.map((each, index) => 
+          <EachPress 
+            key={each.where} 
+            priority={index == 0} 
+            data={each} />
+          )}
       </div>
     </section>
   )
