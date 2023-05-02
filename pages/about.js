@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import styles from '../styles/about.module.scss';
 
 
 const About = ({about_data}) => {
@@ -11,35 +12,30 @@ const About = ({about_data}) => {
   } = about_data;
 
   return(
-    <section className="section_about">
-      <div className="section_about__box">
-        <div className="profile">
-            <Image 
-              className="profile_img" 
-              src={profile.src}
-              alt={profile.alt} 
-              width={200}
-              height={200}
-              priority
-            />
-            <div className="profile_content">
-              <h2 className="profile_header">{profile.name}<span>(Born {profile.ageAndCountry})</span></h2>
-              <p className="profile_detail">{profile.desc}</p>
-            </div>
+    <section className={styles.section}>
+      <div className={styles.flexBox}>
+        <div className={styles.profile}>
+          <Image 
+            src={profile.src}
+            alt={profile.alt} 
+            width={400}
+            height={400}
+            priority
+          />
+          <div className={styles.content}>
+            <h1>{profile.name}<span>(Born {profile.ageAndCountry})</span></h1>
+            <p>{profile.desc}</p>
           </div>
-          <div className="description">
-          <p className="description_1">
-            {simple_note.desc_1}
-          </p>
-          <p className="description_2">
-            {simple_note.desc_2}
-          </p>
-          <p className="description_3">
-            {simple_note.desc_3}
-          </p>
         </div>
-        <div className="cv_section">
-          <h3>EXHIBITION</h3>
+
+        <div className={styles.desription}>
+          <p>{simple_note.desc_1}</p>
+          <p>{simple_note.desc_2}</p>
+          <p>{simple_note.desc_3}</p>
+        </div>
+
+        <div className={styles.cv}>
+          <h2>EXHIBITION</h2>
           <ul>
             {exhibition.map(({year,title,where,date,isDone}) => {
               return(
@@ -50,19 +46,19 @@ const About = ({about_data}) => {
         </div>
         
         {award.length > 0 ?
-          <div className="cv_section">
-            <h3>AWARD</h3>
+          <div className={styles.cv}>
+            <h2>AWARD</h2>
             <ul>
               {award.map(({year,title,url}) => {
-                return <li className="underline" onClick={() => window.open(url)}>{year} {title}</li>
+                return <li className={styles.underline} onClick={() => window.open(url)}>{year} {title}</li>
               })}
             </ul>
           </div>:<></>
         }
 
         {lecture.length > 0 ?      
-          <div className="cv_section">
-            <h3>LECTURE</h3>
+          <div className={styles.cv}>
+            <h2>LECTURE</h2>
             <ul>
               {lecture.map(({year,title}) => {
                 return <li>{year} {title}</li>
