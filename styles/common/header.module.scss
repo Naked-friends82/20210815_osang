@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.logoSection {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+}
+
+.mainLogo {
+  position: 'relative';
+  width: 200px;
+  height: 40px;
+}
+
+.navToggle {
+  display: none;
+  //mobile 추가해야함
+}
+
+.navSection {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.linkBox {
+  display: flex;
+
+  & a {
+    margin: 0px 16px;
+    // font-size: ;
+  }
+}
+
+.instaIcon {
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.backBtn {
+  display: none;
+}
