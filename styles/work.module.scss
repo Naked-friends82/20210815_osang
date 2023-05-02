@@ -1,0 +1,35 @@
+/* work */
+.section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 200px 0px 100px 0px;
+  /* margin: 200px 16px 100px 16px; */
+  padding: 0px 16px;
+
+}
+
+.flexBox {
+  display: flex;
+  overflow-x: scroll;
+  // font-family: var(--typo-nanum);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.project {
+  width: 270px;
+  margin: 0px 16px;
+  // color: var(--color-black);
+
+  & img {
+    margin-bottom: 8px;
+  }
+
+  & h1 {
+    // font-size: var(--font-sangmax);
+  }
+}

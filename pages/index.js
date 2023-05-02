@@ -1,26 +1,26 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from '../styles/work.module.scss';
 
 const Work = ({workThumbnailData}) => {
 	const {data} = workThumbnailData;
 
 	return (
-		<section className="section_work">
-			<div className="section_work__projectReck">
-			{data.map((each) => 
+		<section className={styles.section}>
+			<div className={styles.flexBox}>
+			{data.map((each,index) => 
 				<Link 
 					key={each.project}
-					className="project_index link" 
+					className={styles.project}
 					href={each.url}>
 					<Image 
-							className="index_img" 
 							src={each.thumbnail} 
-							width={200}
-							height={300}
+							width={270}
+							height={427}
 							alt={each.project} 
-							priority
+							priority={index==0}
 						/>
-					<h1 className="index_header">{each.project}</h1>
+					<h1>{each.project}</h1>
 				</Link>
 			)}
 			</div>
