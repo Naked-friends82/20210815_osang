@@ -1,9 +1,9 @@
 import Layout from '../components/common/Layout';
+import '../styles/common/globals.scss';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-    <div>you can use Layout in this component</div>
     <Layout>
       <Component {...pageProps} />
     </Layout>
