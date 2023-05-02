@@ -1,0 +1,28 @@
+.section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  & .description {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    // font-size: var(--font-max);
+    // font-family: var(--typo-nanum);
+    line-height: 32px;
+  }
+
+  & .email {
+    // font-size: var(--font-max);
+  }
+}
+
+.reremove {
+  display: none;
+}
