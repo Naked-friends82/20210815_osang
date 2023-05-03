@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import styles from '../../styles/eachWork.module.scss';
 
 const Carousel = ({data}) => {
   //다 하고 개선하자.
@@ -24,29 +25,28 @@ const Carousel = ({data}) => {
   };
 
   return (
-  <div className="image_reck">
-    <Image 
-      className="image_reck__imgs" 
-      src={data[currentDetail]} 
-      width={500}
-      height={400}
-      // priority
-      alt="detail" />
-    <div className="image_reck__btn">
-      <button className="image_btn" onClick={shiftDetail} value="prev" ><BiChevronLeft /></button>
-      <button className="image_btn" onClick={shiftDetail} value="next" ><BiChevronRight /></button>
+    <div className={styles.carousel}>
+      <div className={styles.imgBox}>
+        <Image 
+          src={data[currentDetail]} 
+          alt="detail"
+          style={{"objectFit": "cover"}}
+          fill
+          />
+      </div>
+      <div className={styles.dots}>
+        <button className={styles.btn} onClick={shiftDetail} value="prev" ><BiChevronLeft /></button>
+          {data.map(
+            (each,index) => 
+            <button 
+              key={index} 
+              value={index} 
+              onClick={shiftDetail} />
+            )}
+        <button className={styles.btn} onClick={shiftDetail} value="next" ><BiChevronRight /></button>
+      </div>
     </div>
-    <div className="image_reck__dot">
-      {data.map(
-        (each,index) => 
-        <button 
-          key={index} 
-          className="dot" 
-          value={index} 
-          onClick={shiftDetail} />
-        )}
-    </div>
-</div>);
+  );
 }
 
 export default Carousel;

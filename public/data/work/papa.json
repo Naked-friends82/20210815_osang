@@ -4,6 +4,7 @@
     "title": "PAPA",
     "year": "2021",
     "mainImg": "/asset/papa/pa_main.jpg",
+    "imgRatio": 1.00,
     "detailImg": [
       "/asset/papa/pa_1.jpg",
       "/asset/papa/pa_2.jpg",

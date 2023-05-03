@@ -1,27 +1,26 @@
 import Image from 'next/image';
 import Carousel from '../../components/work/Carousel';
-// import "../style/web/tspre.css";
-// import "../style/mobile/tspre_mobile.css";
+import styles from '../../styles/eachWork.module.scss';
 
 
 const WorkDetail = ({detailData}) => {
   const {isDone, data} = detailData;
 
   return(
-    <div className="project">
-      <div className="project_content">
-        {isDone ? 
+    <div className={styles.project}>
+      <div className={styles.flexBox}>
+        {isDone ?  
         <>
           <Image 
             className="project_mainImg" 
             src={data.mainImg} 
             alt={`${data.title} main`}
-            width={500}
-            height={700}
+            width={600}
+            height={600 * data.imgRatio}
             priority
             />
-          <h1 className="project_header">{data.title} <span className="project_year">[{data.year}]</span></h1>
-          <div className="project_description">
+          <h1>{data.title} <span>[{data.year}]</span></h1>
+          <div className={styles.description}>
             {data.desc.map((each,index) => <p key={index}>{each}</p>)}
           </div>
           <Carousel data={data.detailImg}/>

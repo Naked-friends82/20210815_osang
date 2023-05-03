@@ -4,6 +4,7 @@
     "title": "Knitted Light",
     "year": "2022",
     "mainImg": "/asset/knitted_light/knitted_light_main.jpg",
+    "imgRatio": 1.25,
     "detailImg": [
       "/asset/knitted_light/knitted_light_1.jpg",
       "/asset/knitted_light/knitted_light_2.jpg",

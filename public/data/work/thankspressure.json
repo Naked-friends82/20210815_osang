@@ -4,6 +4,7 @@
     "title": "Thankspressure",
     "year": "2020",
     "mainImg": "/asset/thankspressure/tp_main.jpg",
+    "imgRatio": 1.04,
     "detailImg": [
       "/asset/thankspressure/tp_1.jpg",
       "/asset/thankspressure/tp_2.jpg",
