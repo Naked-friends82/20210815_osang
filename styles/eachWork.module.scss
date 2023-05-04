@@ -15,7 +15,6 @@
   width: 600px;
   display: flex;
   flex-direction: column;
-  // font-family: $typo-nanum);
 
   & img {
     margin-bottom: 32px;
@@ -23,8 +22,8 @@
 
   & h1 {
     margin-bottom: 40px;
-
     font-size: $font-mmax;
+    font-weight: $weight-regular;
 
     & span {
       font-size: $font-regular;
@@ -37,6 +36,7 @@
 
     & p {
       margin-bottom: 24px;
+      font-weight: $weight-regular;
     }
   }
 }

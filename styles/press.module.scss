@@ -13,7 +13,6 @@
     width: 600px;
     display: flex;
     flex-direction: column;
-    // font-family: $typo-nanum);
   }
 }
 
@@ -24,7 +23,7 @@
   .title {
     margin: 0px;
     margin-bottom: 6px;
-    font-weight: $weight-medium;
+    font-weight: $weight-regular;
     color: $color-ddarkgray;
 
     & span {

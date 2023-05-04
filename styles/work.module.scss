@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   margin: 200px 0px 100px 0px;
-  /* margin: 200px 16px 100px 16px; */
   padding: 0px 16px;
 
 }
@@ -14,7 +13,6 @@
 .flexBox {
   display: flex;
   overflow-x: scroll;
-  // font-family: $typo-nanum);
 
   &::-webkit-scrollbar {
     display: none;
@@ -33,5 +31,6 @@
 
   & h1 {
     font-size: $font-sangmax;
+    font-weight: $weight-regular;
   }
 }
