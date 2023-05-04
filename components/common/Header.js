@@ -7,11 +7,11 @@ const Header = () => {
   return(
     <header className={styles.header}>
       <div className={styles.logoSection}>
-        <Link href='/' className={styles.mainLogo}>
+        <Link href='/'>
           <Image 
             src="/asset/logo.png"
             alt="osangmain Main Logo" 
-            style={{ objectFit: 'cover' }}
+            sizes="200px"
             fill
             />
         </Link>

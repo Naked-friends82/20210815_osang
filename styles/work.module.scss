@@ -1,4 +1,6 @@
-/* work */
+@import './common/variables.scss';
+
+
 .section {
   width: 100vw;
   display: flex;
@@ -12,7 +14,7 @@
 .flexBox {
   display: flex;
   overflow-x: scroll;
-  // font-family: var(--typo-nanum);
+  // font-family: $typo-nanum);
 
   &::-webkit-scrollbar {
     display: none;
@@ -23,13 +25,13 @@
 .project {
   width: 270px;
   margin: 0px 16px;
-  // color: var(--color-black);
+  color: $color-black;
 
   & img {
     margin-bottom: 8px;
   }
 
   & h1 {
-    // font-size: var(--font-sangmax);
+    font-size: $font-sangmax;
   }
 }

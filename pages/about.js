@@ -39,7 +39,7 @@ const About = ({about_data}) => {
           <ul>
             {exhibition.map(({year,title,where,date,isDone}) => {
               return(
-                <li>{year} {title} / {where} / {date} </li>
+                <li key={title}>{year} {title} / {where} / {date} </li>
               )
             })}
           </ul>
@@ -50,7 +50,7 @@ const About = ({about_data}) => {
             <h2>AWARD</h2>
             <ul>
               {award.map(({year,title,url}) => {
-                return <li className={styles.underline} onClick={() => window.open(url)}>{year} {title}</li>
+                return <li key={title} className={styles.underline} onClick={() => window.open(url)}>{year} {title}</li>
               })}
             </ul>
           </div>:<></>
@@ -61,7 +61,7 @@ const About = ({about_data}) => {
             <h2>LECTURE</h2>
             <ul>
               {lecture.map(({year,title}) => {
-                return <li>{year} {title}</li>
+                return <li key={title}>{year} {title}</li>
                 })}
             </ul>
           </div>:<></>

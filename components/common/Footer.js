@@ -4,7 +4,7 @@ import styles from '../../styles/common/footer.module.scss';
 const Footer = () => {
   return(
     <footer className={styles.footer}>
-      <Link className={styles.welcome} href="/contact">
+      <Link href="/contact">
           <div>
           All Welcome. Do not hesitate to get in touch.
           </div>

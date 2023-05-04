@@ -1,3 +1,5 @@
+@import './common/variables.scss';
+
 .section {
   display: flex;
   flex-direction: column;
@@ -11,21 +13,19 @@
     width: 600px;
     display: flex;
     flex-direction: column;
-    // font-family: var(--typo-nanum);
+    // font-family: $typo-nanum);
   }
 }
 
-
-
 .element {
   margin-bottom: 40px;
-  // font-size: var(--font-regular);
+  font-size: $font-regular;
 
   .title {
     margin: 0px;
     margin-bottom: 6px;
-    // font-weight: var(--weight-regular);
-    // color: var(--color-ddarkgray);
+    font-weight: $weight-medium;
+    color: $color-ddarkgray;
 
     & span {
       margin-right: 10px;

@@ -1,22 +1,22 @@
+@import './variables.scss';
+
 .footer {
-  //전체 페이지 의존성이 사라져서 각각 modul마다 적용해야한다.
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
-  // font-weight: var(--weight-light);
-  // font-size: var(--font-min);
-  // color: var(--color-darkgray);
-}
+  font-size: $font-min;
+  font-weight: $weight-light;
+  color: $color-darkgray;
 
-.welcome {
-  display: block;
-  margin-bottom: 30px;
-  // text-decoration: none;
-  // font-size: var(--font-regular);
-  // font-weight: var(--weight-medium);
-  // font-family: var(--typo-nanum);
-  // color: var(--color-ddarkgray);
+  & a {
+    display: block;
+    margin-bottom: 30px;
+    font-size: $font-regular;
+    font-weight: $weight-medium;
+    color: $color-ddarkgray;
+    // font-family: $typo-nanum);
+  }
 }
