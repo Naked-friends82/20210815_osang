@@ -15,7 +15,7 @@ function Navig(){
 
   return(
     <>
-      <GiHamburgerMenu className={styles.navToggle} />
+      <GiHamburgerMenu className={styles.navToggle} onClick={showNav} />
       <div className={navigVisi? styles.navSection : `${styles.navSection} ${styles.navMobile}`}>
         <div className={styles.linkBox}>
           <Link href='/'>Work</Link>
