@@ -15,13 +15,14 @@ const About = ({about_data}) => {
     <section className={styles.section}>
       <div className={styles.flexBox}>
         <div className={styles.profile}>
-          <Image 
-            src={profile.src}
-            alt={profile.alt} 
-            width={400}
-            height={400}
-            priority
-          />
+          <div className={styles.imgBox}>
+            <Image 
+              src={profile.src}
+              alt={profile.alt} 
+              fill
+              // priority
+            />
+          </div>
           <div className={styles.content}>
             <h1>{profile.name}<span>(Born {profile.ageAndCountry})</span></h1>
             <p>{profile.desc}</p>
