@@ -1,28 +1,28 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
-import styles from '../../styles/eachWork.module.scss';
+import styles from '../../styles/carousel.module.scss';
 
 const Carousel = ({data}) => {
-  //다 하고 개선하자.
-  //현재 제대로 작동 안함
-  // If문을 hashmap으로
   const [currentDetail, setCurrentDetail] = useState(0);
-  
+  const tmpArray = Array.from({length:data.length},(v,k) => k);
+
   const shiftDetail = (e) => {
-    const {target: {value}} = e;
+    const {target:{dataset:{value}}} = e;
+    if(tmpArray.indexOf(parseInt(value)) >= 0){
+      setCurrentDetail(parseInt(value));
+      return
+    }
+    btnsLogic(value);
+  };
+
+  const btnsLogic = (value) => {
     if(value === "prev" && currentDetail !== 0){
       setCurrentDetail(currentDetail -1);
-    } else if(value === "next" && currentDetail !== 5){
+    } else if(value === "next" && currentDetail !== tmpArray.length -1){
       setCurrentDetail(currentDetail +1);
-    } else if(value === "0"){setCurrentDetail(0);
-    } else if(value === "1"){setCurrentDetail(1);
-    } else if(value === "2"){setCurrentDetail(2);
-    } else if(value === "3"){setCurrentDetail(3);
-    } else if(value === "4"){setCurrentDetail(4);
-    } else if(value === "5"){setCurrentDetail(5);
-    }
-  };
+    } 
+  }
 
   return (
     <div className={styles.carousel}>
@@ -30,20 +30,19 @@ const Carousel = ({data}) => {
         <Image 
           src={data[currentDetail]} 
           alt="detail"
-          style={{"objectFit": "cover"}}
           fill
           />
       </div>
       <div className={styles.dots}>
-        <button className={styles.btn} onClick={shiftDetail} value="prev" ><BiChevronLeft /></button>
-          {data.map(
-            (each,index) => 
+        <BiChevronLeft className={styles.btn} onClick={shiftDetail} data-value="prev" />
+          {tmpArray.map((each) => 
             <button 
-              key={index} 
-              value={index} 
+              className={currentDetail == each ? styles.now: ""}
+              key={each} 
+              data-value={each} 
               onClick={shiftDetail} />
             )}
-        <button className={styles.btn} onClick={shiftDetail} value="next" ><BiChevronRight /></button>
+        <BiChevronRight className={styles.btn} onClick={shiftDetail} data-value="next" />
       </div>
     </div>
   );

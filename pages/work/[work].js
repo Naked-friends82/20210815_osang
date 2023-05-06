@@ -11,14 +11,15 @@ const WorkDetail = ({detailData}) => {
       <div className={styles.flexBox}>
         {isDone ?  
         <>
-          <Image 
-            className="project_mainImg" 
-            src={data.mainImg} 
-            alt={`${data.title} main`}
-            width={600}
-            height={600 * data.imgRatio}
-            priority
-            />
+          <div className={styles.imgBox}>
+            <Image 
+              className="project_mainImg" 
+              src={data.mainImg} 
+              alt={`${data.title} main`}
+              fill
+              priority
+              />
+          </div>
           <h1>{data.title} <span>[{data.year}]</span></h1>
           <div className={styles.description}>
             {data.desc.map((each,index) => <p key={index}>{each}</p>)}

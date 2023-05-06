@@ -1,4 +1,5 @@
-@import './common/variables.scss';
+@import './common/variables';
+@import './common/media_query';
 
 
 .project {
@@ -9,6 +10,13 @@
   margin-bottom: 16px;
   margin-left: 8px;
   margin-right: 8px;
+
+  @include mobile {
+    align-items: none;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .flexBox {
@@ -16,8 +24,24 @@
   display: flex;
   flex-direction: column;
 
-  & img {
+  @include mobile {
+    width: 100%;
+  }
+
+  .imgBox {
+    position: relative;
     margin-bottom: 32px;
+
+    @include mobile {
+      margin-bottom: 18px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      position: relative !important;
+      object-fit: cover;
+    }
   }
 
   & h1 {
@@ -25,8 +49,18 @@
     font-size: $font-mmax;
     font-weight: $weight-regular;
 
+    @include mobile {
+      font-size: $font-max;
+      margin-left: 12px;
+      margin-bottom: 30px;
+    }
+
     & span {
       font-size: $font-regular;
+
+      @include mobile {
+        font-size: $font-min;
+      }
     }
   }
 
@@ -34,58 +68,16 @@
     margin-bottom: 30px;
     line-height: 24px;
 
+    @include mobile {
+      font-size: $font-small;
+      line-height: 20px;
+      margin: 0px 12px;
+      margin-bottom: 30px;
+    }
+
     & p {
       margin-bottom: 24px;
       font-weight: $weight-regular;
-    }
-  }
-}
-
-.carousel {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  & .imgBox {
-    position: relative;
-    width: 600px;
-    height: 450px;
-  }
-}
-
-.dots {
-  position: absolute;
-  top: 102%;
-
-  & .btn {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border: none;
-    border-radius: 1rem;
-    transition: 0.3s ease;
-    background-color: transparent;
-    font-size: $font-max;
-    color: $color-gray;
-
-    &:hover {
-      // Size 변화 주자
-      color: $color-darkgray;
-    }
-  }
-
-  & button {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border: none;
-    border-radius: 1rem;
-    transition: 0.3s ease;
-    background-color: $color-gray;
-
-    &:hover {
-      background-color: $color-darkgray;
     }
   }
 }
