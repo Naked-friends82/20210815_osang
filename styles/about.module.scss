@@ -75,7 +75,7 @@
         font-size: $font-regular;
 
         @include mobile {
-          font-size: $font-sangmin;
+          font-size: $font-min;
         }
       }
     }
@@ -85,8 +85,8 @@
       color: $color-darkgray;
 
       @include mobile {
+        font-size: $font-sangmin;
         line-height: 14px;
-        font-size: $font-small;
       }
     }
   }
