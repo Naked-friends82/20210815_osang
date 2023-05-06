@@ -10,24 +10,16 @@ const EachPress = ({data, priority}) => {
   return(
     <div className={styles.element}>
       <h2 className={styles.title}><span>{data.year}</span>{data.where}</h2>
-      {data.url == null ? 
-        <Image 
-          src={data.imgSrc} 
-          alt="press capture" 
-          width={600}
-          height={424}
-          priority= {priority}
-          />
-      : <Image 
-          className={styles.clickable}
-          onClick={goUrl} 
-          src={data.imgSrc} 
-          alt="press capture" 
-          width={600}
-          height={424}
-          priority= {priority}
-          />
-      }
+      <div className={styles.imgBox}>
+      <Image 
+        className={data.url == null ? "": styles.clickable}
+        onClick={data.url == null ? "": goUrl}
+        src={data.imgSrc} 
+        alt="press capture" 
+        fill
+        priority= {priority}
+        />
+      </div>
     </div>
   )
 }
