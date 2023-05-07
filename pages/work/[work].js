@@ -13,7 +13,6 @@ const WorkDetail = ({detailData}) => {
         <>
           <div className={styles.imgBox}>
             <Image 
-              className="project_mainImg" 
               src={data.mainImg} 
               alt={`${data.title} main`}
               fill
