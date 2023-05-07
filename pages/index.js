@@ -1,9 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/work.module.scss';
+import useHeader from '../hooks/useHeader';
+import useFooter from '../hooks/useFooter';
+import { useEffect } from 'react';
 
-const Work = ({workThumbnailData}) => {
+const Work = ({workThumbnailData, headerData, footerData}) => {
 	const {data} = workThumbnailData;
+
+	const {	initHeaderData	} = useHeader();
+	const {	initFooterData	} = useFooter();
+
+	useEffect(() => {
+		initHeaderData(headerData.data);
+		initFooterData(footerData.data);
+	},[initHeaderData, headerData,initFooterData,footerData])
 
 	return (
 		<section className={styles.section}>
@@ -33,10 +44,18 @@ export default Work;
 export const getStaticProps = async() => {
 	const workThumbnailData = await fetch(
 		`http://localhost:3000/api/work`
-	).then((res) => res.json())
+	).then((res) => res.json());
+
+  const headerData = await fetch(
+    `http://localhost:3000/api/header`
+    ).then((res) => res.json());
+	
+	const footerData = await fetch(
+		`http://localhost:3000/api/footer`
+		).then((res) => res.json());
 
 	return{
-		props:{workThumbnailData},
+		props:{workThumbnailData, headerData, footerData},
 		revalidate:60*60
 	}
 }
