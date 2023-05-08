@@ -23,7 +23,7 @@ function Navig(){
         {data !== undefined ?
           <div className={styles.linkBox}>
             {data.nav_list.map((eachMenu, index) => 
-              <Link key={eachMenu} href={`/${index !== 0 ? eachMenu : ""}`}>{eachMenu}</Link>
+              <Link key={eachMenu} href={`/${index !== 0 ? eachMenu.toLowerCase() : ""}`}>{eachMenu}</Link>
             )}
             <SnsMenu snsUrl={data.sns}/>
             <div className={styles.backBtn} onClick={showNav} />
