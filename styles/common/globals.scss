@@ -5,6 +5,7 @@
   margin: 0;
 }
 
+
 html,
 body {
   margin: 0px;
@@ -13,6 +14,12 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+@layer base {
+  #__next {
+    display: contents;
+  }
 }
 
 a {
