@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 import styles from '../styles/work.module.scss';
 import useHeader from '../hooks/useHeader';
 import useFooter from '../hooks/useFooter';
 import { useEffect } from 'react';
+
 
 const Work = ({workThumbnailData, headerData, footerData}) => {
 	const {data} = workThumbnailData;
@@ -17,6 +19,15 @@ const Work = ({workThumbnailData, headerData, footerData}) => {
 	},[initHeaderData, headerData,initFooterData,footerData])
 
 	return (
+		<>
+		<NextSeo
+        title='Work'
+        description='This is Work page in Sangmin Oh studio.'
+        // canonical='https://prac-nextjs-map.vercel.app'
+        // openGraph={{
+        //   url: 'https://prac-nextjs-map.vercel.app'
+        // }}
+      />
 		<section className={styles.section}>
 			<div className={styles.flexBox}>
 			{data.map((each,index) => 
@@ -36,6 +47,7 @@ const Work = ({workThumbnailData, headerData, footerData}) => {
 			)}
 			</div>
 		</section>
+		</>
 	);
 }
 

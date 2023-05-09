@@ -1,13 +1,24 @@
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 import Carousel from '../../components/work/Carousel';
 import styles from '../../styles/eachWork.module.scss';
 
 
 const WorkDetail = ({detailData}) => {
+  if (!detailData) return null;
   const {isDone, data} = detailData;
 
   return(
-    <div className={styles.project}>
+    <>
+    <NextSeo
+        title={data.title}
+        description={`There are ${data.title} project's photos and statement.`}
+        // canonical='https://prac-nextjs-map.vercel.app'
+        // openGraph={{
+        //   url: 'https://prac-nextjs-map.vercel.app'
+        // }}
+      />
+    <section className={styles.project}>
       <div className={styles.flexBox}>
         {isDone ?  
         <>
@@ -27,7 +38,8 @@ const WorkDetail = ({detailData}) => {
         </>
         :<p>preparing...</p>}
       </div>
-  </div>
+  </section>
+    </>
   )
 }
 export default WorkDetail;

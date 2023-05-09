@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 import styles from '../styles/about.module.scss';
 
 
@@ -12,6 +13,15 @@ const About = ({about_data}) => {
   } = about_data;
 
   return(
+    <>
+		<NextSeo
+        title='About'
+        description='This is information page about Sangmin Oh'
+        // canonical='https://prac-nextjs-map.vercel.app'
+        // openGraph={{
+        //   url: 'https://prac-nextjs-map.vercel.app'
+        // }}
+      />
     <section className={styles.section}>
       <div className={styles.flexBox}>
         <div className={styles.profile}>
@@ -69,6 +79,7 @@ const About = ({about_data}) => {
         }
       </div>
     </section>
+    </>
   )
 }
 
