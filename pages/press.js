@@ -33,9 +33,10 @@ const Press = ({pressData}) => {
 export default Press;
 
 export const getStaticProps = async() => {
-  const pressData = await fetch(
-    `http://localhost:3000/api/press`
-  ).then((res) => res.json());
+  // const pressData = await fetch(
+  //   `http://localhost:3000/api/press`
+  // ).then((res) => res.json());
+  const pressData = (await import('../public/data/press.json')).default;
 
   return{
     props: {pressData},

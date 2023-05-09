@@ -52,12 +52,17 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async({ params }) => {
-  const detailData = await fetch(
-		`http://localhost:3000/api/workDetail?path=${params.work}`
-	).then((res) => res.json());
+  // const detailData = await fetch(
+	// 	`http://localhost:3000/api/workDetail?path=${params.work}`
+	// ).then((res) => res.json());
+  // const detailData = (await import(`../public/data/work/${params.work}.json`)).default;
+
+  const paths = (await import('../../public/data/workPath.json')).default;
+  const exactPath = paths.find((project) => project === params.work);
+  const detailData = (await import(`../../public/data/work/${exactPath}.json`)).default;
 
   return {
-    props:{detailData},
+    props:{ detailData },
     revalidate: 60 * 60
   }
 }
