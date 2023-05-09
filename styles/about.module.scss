@@ -1,0 +1,149 @@
+@import './common/variables';
+@import './common/media_query';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  @include mobile {
+    margin: 0px;
+    margin-top: 100px;
+  }
+}
+
+.flexBox {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  & .imgBox {
+    position: relative;
+    width: 400px;
+    height: 400px;
+
+    @include mobile {
+      width: 200px;
+      height: 200px;
+    }
+
+    & img {
+      margin-bottom: 16px;
+
+      @include mobile {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  & .content {
+    width: 400px;
+
+    @include mobile {
+      width: 200px;
+    }
+
+    & h1 {
+      margin-bottom: 6px;
+      font-size: $font-max;
+
+      @include mobile {
+        margin-bottom: 4px;
+        font-size: $font-regular;
+      }
+
+      & span {
+        font-size: $font-regular;
+
+        @include mobile {
+          font-size: $font-min;
+        }
+      }
+    }
+
+    & p {
+      font-size: $font-small;
+      color: $color-darkgray;
+
+      @include mobile {
+        font-size: $font-sangmin;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.desription {
+  margin: 0px 48px;
+  margin-bottom: 60px;
+  font-size: $font-medium;
+  line-height: 24px;
+
+  @include mobile {
+    margin: 0px 20px;
+    margin-bottom: 30px;
+    font-size: $font-small;
+    line-height: 18px;
+  }
+
+  & p {
+    margin-bottom: 32px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cv {
+  margin: 0px 48px;
+  margin-bottom: 30px;
+  font-size: $font-regular;
+  line-height: 24px;
+
+  @include mobile {
+    margin: 0px 20px;
+    margin-bottom: 14px;
+    font-size: $font-min;
+    line-height: 18px;
+  }
+
+  & h2 {
+    margin: 0px;
+    font-size: $font-medium;
+    font-weight: $weight-bold;
+
+    @include mobile {
+      font-size: $font-small;
+    }
+  }
+
+  & ul {
+    padding: 0px;
+    color: $color-ddarkgray;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}

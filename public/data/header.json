@@ -1,0 +1,16 @@
+{
+  "data": {
+    "logoSrc": "/asset/logo.png",
+    "nav_list": [
+      "Work",
+      "About",
+      "Press",
+      "Contact"
+    ],
+    "sns": {
+      "instagram": "https://www.instagram.com/osangmin_studio/",
+      "facebook": "",
+      "twitter": ""
+    }
+  }
+}

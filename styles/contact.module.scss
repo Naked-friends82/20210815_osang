@@ -1,0 +1,50 @@
+@import './common/variables';
+@import './common/media_query';
+
+.section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  @include mobile {
+    height: 68vh;
+    margin: 0px;
+    margin-top: 110px;
+  }
+
+  & .description {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    font-size: $font-max;
+    line-height: 32px;
+
+    @include mobile {
+      margin-bottom: 20px;
+      font-size: $font-small;
+      line-height: 24px;
+    }
+  }
+
+  & .email {
+    font-size: $font-max;
+
+    @include mobile {
+      font-size: $font-regular;
+    }
+  }
+}
+
+.reremove {
+  display: none;
+
+  @include mobile {
+    display: inline;
+  }
+}

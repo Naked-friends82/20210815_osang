@@ -1,0 +1,114 @@
+{
+  "profile": {
+    "src": "/asset/profile.jpg",
+    "alt": "profile Osangmin",
+    "name": "SANGMIN OH",
+    "ageAndCountry": "1994, Kr",
+    "desc": "2017 ~ 2022 BA - Design Academy Eindhoven (NL)"
+  },
+  "simple_note": {
+    "desc_1": "Sangmin Oh established his own studio in 2021 based in Netherlands and Korea. He is influenced by sculptural crafts, textile techniques, color of explored materials and architectural elements.",
+    "desc_2": "The studio focuses on observing trivial and small empty spaces, aside from spaces that are displayed amongst people's daily hectic movements. “I want to fill up those brief, empty spaces. They can be filled up with emotional or visual stories and even with new realizations.”",
+    "desc_3": ""
+  },
+  "exhibition": [
+    {
+      "year": "2023",
+      "title": "Secrets of making III",
+      "where": "Textiel Museum, Tilburg, NL",
+      "date": "Jul . 2023 ~ Jun . 2024",
+      "isDone": "done"
+    },
+    {
+      "year": "2023",
+      "title": "Design fair",
+      "where": "Het nieuwe instituut, Rotterdam, NL",
+      "date": "30 . Apr",
+      "isDone": "upcoming"
+    },
+    {
+      "year": "2023",
+      "title": "Alcova, Milan Design Week",
+      "where": "Porta Vittoria Abattoir, Milan, IT",
+      "date": "17 ~ 23 . Apr",
+      "isDone": "upcoming"
+    },
+    {
+      "year": "2023",
+      "title": "Collectible 'Curated Section'",
+      "where": "Avenue du Port, Brussels, BE",
+      "date": "9 ~ 12 . Mar",
+      "isDone": "upcoming"
+    },
+    {
+      "year": "2023",
+      "title": "Enlightened",
+      "where": "Ammann gallery , Cologne, DE",
+      "date": "26 . Jan ~ 20 . Apr",
+      "isDone": "done"
+    },
+    {
+      "year": "2023",
+      "title": "New year exhibition",
+      "where": "Priveekollektie contemporary art design , Heusden , NL",
+      "date": "29 . Jan ~ 12 . Mar",
+      "isDone": "done"
+    },
+    {
+      "year": "2022",
+      "title": "‘If you have a headache, Take a samba’",
+      "where": "ETZ, Tilburg, NL",
+      "date": "04 . Nov ~ 24 . Feb",
+      "isDone": "done"
+    },
+    {
+      "year": "2022",
+      "title": "‘Table of curiosities’ Commissioned by Minyoung foodlab",
+      "where": "YKSI, Eindhoven, NL",
+      "date": "22 ~ 30 . Oct",
+      "isDone": "done"
+    },
+    {
+      "year": "2022",
+      "title": "Graduation Show, Dutch Design Week",
+      "where": "Microtuin, Eindhoven, NL",
+      "date": "22 ~ 30 . Oct",
+      "isDone": "done"
+    },
+    {
+      "year": "2022",
+      "title": "2022 OBJECT Rotterdam",
+      "where": "HAKA building, Rotterdam, NL",
+      "date": "20 ~ 22 . May",
+      "isDone": "done"
+    },
+    {
+      "year": "2021",
+      "title": "Isola Design, Dutch Design Week",
+      "where": "Schellens Fabriek, Eindhoven, NL",
+      "date": "16 ~ 24 . Oct",
+      "isDone": "done"
+    },
+    {
+      "year": "2020",
+      "title": "Reframing Textile Minor exhibition",
+      "where": "Textiel Museum, Tilburg, NL",
+      "date": "07 . Feb ~ 10 . Mar",
+      "isDone": "done"
+    }
+  ],
+  "award": [
+    {
+      "year": "2020",
+      "title": "Winner of SVTM Jong Talent Award 2022 at the Textiel Museum in Tilburg",
+      "url": "https://userfiles.mailswitch.nl/files/4300-b8a4fbc62595d2971b85afb3875f03a7.jpg"
+    }
+  ],
+  "lecture": [
+    {
+      "year": "2022",
+      "title": "Textiel plus festival 2022"
+    }
+  ],
+  "possession": []
+}

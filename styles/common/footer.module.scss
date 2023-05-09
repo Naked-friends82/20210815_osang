@@ -1,0 +1,21 @@
+@import './variables';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: $font-min;
+  font-weight: $weight-regular;
+  color: $color-darkgray;
+
+  & a {
+    display: block;
+    margin-bottom: 30px;
+    font-size: $font-regular;
+    font-weight: $weight-regular;
+    color: $color-ddarkgray;
+  }
+}

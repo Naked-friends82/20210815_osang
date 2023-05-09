@@ -1,0 +1,113 @@
+@import './variables';
+@import './media_query';
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.logoSection {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+
+  @include mobile {
+    top: 16px;
+    left: 12px;
+  }
+
+  & a {
+    position: relative;
+    width: 200px;
+    height: 40px;
+
+    @include mobile {
+      width: 150px;
+      height: 30px;
+    }
+  }
+}
+
+.navToggle {
+  display: none;
+
+  @include mobile {
+    display: inline;
+    position: fixed;
+    top: 16px;
+    right: 12px;
+    font-size: $font-sangmax;
+    z-index: 2;
+  }
+}
+
+.navSection {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+
+  @include mobile {
+    position: fixed;
+    top: 100px;
+    left: 12px;
+  }
+}
+
+.navMobile {
+  @include mobile {
+    display: none;
+  }
+}
+
+.linkBox {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  & a {
+    margin: 0px 16px;
+    font-size: $font-regular;
+    color: $color-black;
+    font-weight: $weight-regular;
+
+    @include mobile {
+      margin: 2px 2px;
+      padding: 5px 6px;
+      font-size: $font-medium;
+      color: $color-gray;
+      z-index: 2;
+    }
+  }
+
+  & .snsIcon {
+    margin-left: 4px;
+    margin-right: 0px;
+
+    @include mobile {
+      font-size: $font-max;
+      padding: 4px;
+      padding-left: 0px;
+      margin-left: 0px;
+      z-index: 2;
+    }
+  }
+
+  & .backBtn {
+    display: none;
+
+    @include mobile {
+      display: block;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: $color-dddarkgray;
+      opacity: 70%;
+      -webkit-opacity: 0.7;
+      z-index: 1;
+    }
+  }
+}

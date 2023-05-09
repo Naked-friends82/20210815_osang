@@ -1,0 +1,63 @@
+@import './common/variables';
+@import './common/media_query';
+
+
+.section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 200px 0px 100px 0px;
+  padding: 0px 16px;
+
+  @include mobile {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.flexBox {
+  display: flex;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+  }
+}
+
+
+.project {
+  width: 270px;
+  margin: 0px 16px;
+  color: $color-black;
+
+  @include mobile {
+    height: 100%;
+    margin: 0px;
+  }
+
+  & img {
+    margin-bottom: 8px;
+
+    @include mobile {
+      margin-bottom: 6px;
+    }
+  }
+
+  & h1 {
+    font-size: $font-sangmax;
+    font-weight: $weight-regular;
+
+    @include mobile {
+      font-size: $font-medium;
+      margin-bottom: 32px;
+    }
+  }
+}
