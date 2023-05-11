@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://20210815-osang.vercel.app
+
+# Sitemaps
+Sitemap: https://20210815-osang.vercel.app/sitemap.xml
