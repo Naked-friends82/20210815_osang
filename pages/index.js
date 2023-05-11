@@ -54,20 +54,20 @@ const Work = ({workThumbnailData, headerData, footerData}) => {
 export default Work;
 
 export const getStaticProps = async() => {
-	// const workThumbnailData = await fetch(
-	// 	`http://localhost:3000/api/work`
-	// ).then((res) => res.json());
+	const workThumbnailData = await fetch(
+		`${process.env.NEXT_PUBLIC_API_URL}/api/work`
+	).then((res) => res.json());
 
-  // const headerData = await fetch(
-  //   `http://localhost:3000/api/header`
-  //   ).then((res) => res.json());
+  const headerData = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/header`
+    ).then((res) => res.json());
 	
-	// const footerData = await fetch(
-	// 	`http://localhost:3000/api/footer`
-	// 	).then((res) => res.json());
-	const workThumbnailData = (await import('../public/data/workThumbnail.json')).default;
-	const headerData = (await import(`../public/data/header.json`)).default;
-const footerData = (await import(`../public/data/footer.json`)).default;
+	const footerData = await fetch(
+		`${process.env.NEXT_PUBLIC_API_URL}/api/footer`
+		).then((res) => res.json());
+// const workThumbnailData = (await import('../public/data/workThumbnail.json')).default;
+// const headerData = (await import(`../public/data/header.json`)).default;
+// const footerData = (await import(`../public/data/footer.json`)).default;
 	return{
 		props:{workThumbnailData, headerData, footerData},
 		revalidate:60*60

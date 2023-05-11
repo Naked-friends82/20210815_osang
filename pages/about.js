@@ -86,10 +86,10 @@ const About = ({about_data}) => {
 export default About;
 
 export async function getStaticProps() {
-  // const about_data = await fetch(
-  //   'http://localhost:3000/api/about.json'
-  // ).then((response) => response.json());
-  const about_data = (await import('../public/data/about.json')).default;
+  const about_data = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/about`
+  ).then((res) => res.json());
+  // const about_data = (await import('../public/data/about.json')).default;
   return {
     props: { about_data },
     revalidate: 60 * 60,
