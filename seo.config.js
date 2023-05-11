@@ -13,14 +13,14 @@ export default {
       href: '/favicon.png',
     },
   ],
-  // additionalMetaTags: [
-  //   {
-  //     name: 'naver-site-verification',
-  //     content: '03bbee01b695f1b83b82dc27b2aac946fdb31427',
-  //   },
+  additionalMetaTags: [
+    {
+      name: 'naver-site-verification',
+      content: 'efd94dc01dd24682ababa3456394650988804a2a',
+    },
   //   {
   //     name: 'google-site-verification',
   //     content: '_5KMylGBPlSpoGv9goTVZp3wSVur5_JHobernc6pCtw',
   //   },
-  // ],
+  ],
 };
