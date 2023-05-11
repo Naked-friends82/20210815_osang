@@ -16,11 +16,11 @@ export default {
   additionalMetaTags: [
     {
       name: 'naver-site-verification',
-      content: 'efd94dc01dd24682ababa3456394650988804a2a',
+      content: 'c65ce9fe298b3161840f0a54299800d6897b3455',
     },
-  //   {
-  //     name: 'google-site-verification',
-  //     content: '_5KMylGBPlSpoGv9goTVZp3wSVur5_JHobernc6pCtw',
-  //   },
+    {
+      name: 'google-site-verification',
+      content: '_5KMylGBPlSpoGv9goTVZp3wSVur5_JHobernc6pCtw',
+    },
   ],
 };
