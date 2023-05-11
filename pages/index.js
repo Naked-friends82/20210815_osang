@@ -23,7 +23,7 @@ const Work = ({workThumbnailData, headerData, footerData}) => {
 		<NextSeo
         title='Work'
         description='This is Work page in Sangmin Oh studio.'
-        // canonical='https://prac-nextjs-map.vercel.app'
+        canonical={`${process.env.NEXT_PUBLIC_API_URL}`}
         // openGraph={{
         //   url: 'https://prac-nextjs-map.vercel.app'
         // }}

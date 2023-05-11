@@ -4,7 +4,7 @@ import Carousel from '../../components/work/Carousel';
 import styles from '../../styles/eachWork.module.scss';
 
 
-const WorkDetail = ({detailData}) => {
+const WorkDetail = ({detailData, path}) => {
   if (!detailData) return null;
   const {isDone, data} = detailData;
 
@@ -13,7 +13,7 @@ const WorkDetail = ({detailData}) => {
     <NextSeo
         title={data.title}
         description={`There are ${data.title} project's photos and statement.`}
-        // canonical='https://prac-nextjs-map.vercel.app'
+        canonical={`${process.env.NEXT_PUBLIC_API_URL}/work/${path}`}
         // openGraph={{
         //   url: 'https://prac-nextjs-map.vercel.app'
         // }}
@@ -55,13 +55,14 @@ export const getStaticProps = async({ params }) => {
   const detailData = await fetch(
 		`${process.env.NEXT_PUBLIC_API_URL}/api/workDetail?path=${params.work}`
 	).then((res) => res.json());
+  const path = params.work;
 
   // const paths = (await import('../../public/data/workPath.json')).default;
   // const exactPath = paths.find((project) => project === params.work);
   // const detailData = (await import(`../../public/data/work/${exactPath}.json`)).default;
 
   return {
-    props:{ detailData },
+    props:{ detailData, path},
     revalidate: 60 * 60
   }
 }

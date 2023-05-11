@@ -8,7 +8,7 @@ const Contact = () => {
     <NextSeo
         title='Contact'
         description='This is contact page about Sangmin Oh. Contact us and Tell me your stories.'
-        // canonical='https://prac-nextjs-map.vercel.app'
+        canonical={`${process.env.NEXT_PUBLIC_API_URL}/contact`}
         // openGraph={{
         //   url: 'https://prac-nextjs-map.vercel.app'
         // }}

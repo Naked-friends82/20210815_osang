@@ -17,7 +17,7 @@ const About = ({about_data}) => {
 		<NextSeo
         title='About'
         description='This is information page about Sangmin Oh'
-        // canonical='https://prac-nextjs-map.vercel.app'
+        canonical={`${process.env.NEXT_PUBLIC_API_URL}/about`}
         // openGraph={{
         //   url: 'https://prac-nextjs-map.vercel.app'
         // }}
