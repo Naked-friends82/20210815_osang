@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import Layout from '../components/common/Layout';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../seo.config';
@@ -18,6 +19,24 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
       </main>
+      <Script
+        strategy='afterInteractive'
+        src={`https://www.googletagmanager.com/gtag/js?id=G-M3VVH96GXY`} />
+      <Script
+        id='gtag-init'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={
+          {
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-M3VVH96GXY');
+            `
+          }
+        }
+      />
     </>
   )
 }
