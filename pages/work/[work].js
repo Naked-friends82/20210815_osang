@@ -14,9 +14,6 @@ const WorkDetail = ({detailData, path}) => {
         title={data.title}
         description={`There are ${data.title} project's photos and statement.`}
         canonical={`${process.env.NEXT_PUBLIC_API_URL}/work/${path}`}
-        // openGraph={{
-        //   url: 'https://prac-nextjs-map.vercel.app'
-        // }}
       />
     <section className={styles.project}>
       <div className={styles.flexBox}>

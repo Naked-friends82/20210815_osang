@@ -21,12 +21,9 @@ const Work = ({workThumbnailData, headerData, footerData}) => {
 	return (
 		<>
 		<NextSeo
-        title='Work'
-        description='This is Work page in Sangmin Oh studio.'
+        title='Studio'
         canonical={`${process.env.NEXT_PUBLIC_API_URL}`}
-        // openGraph={{
-        //   url: 'https://prac-nextjs-map.vercel.app'
-        // }}
+				
       />
 		<section className={styles.section}>
 			<div className={styles.flexBox}>

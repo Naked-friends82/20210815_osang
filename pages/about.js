@@ -18,9 +18,6 @@ const About = ({about_data}) => {
         title='About'
         description='This is information page about Sangmin Oh'
         canonical={`${process.env.NEXT_PUBLIC_API_URL}/about`}
-        // openGraph={{
-        //   url: 'https://prac-nextjs-map.vercel.app'
-        // }}
       />
     <section className={styles.section}>
       <div className={styles.flexBox}>
