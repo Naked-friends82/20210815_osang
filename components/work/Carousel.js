@@ -30,6 +30,7 @@ const Carousel = ({data}) => {
         <Image 
           src={data[currentDetail]} 
           alt="detail"
+          priority
           fill
           />
       </div>

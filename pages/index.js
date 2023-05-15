@@ -20,7 +20,7 @@ const Work = ({workThumbnailData, layoutData}) => {
       />
 		<section className={styles.section}>
 			<div className={styles.flexBox}>
-			{data.map((each,index) => 
+			{data.map((each) => 
 				<Link 
 					key={each.project}
 					className={styles.project}
@@ -32,7 +32,7 @@ const Work = ({workThumbnailData, layoutData}) => {
 								src={each.thumbnail} 
 								alt={each.project}
 								fill
-								priority={index==0}
+								priority
 							/>
 					</div>
 					<h1>{each.project}</h1>

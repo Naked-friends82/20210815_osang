@@ -18,10 +18,9 @@ const Press = ({pressData, layoutData}) => {
       />
     <section className={styles.section}>
       <div className={styles.content}>
-        {data.map((each, index) => 
+        {data.map((each) => 
           <EachPress 
             key={each.where} 
-            priority={index == 0} 
             data={each} />
           )}
       </div>

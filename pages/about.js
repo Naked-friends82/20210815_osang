@@ -31,7 +31,7 @@ const About = ({about_data, layoutData}) => {
               src={profile.src}
               alt={profile.alt} 
               fill
-              // priority
+              priority
             />
           </div>
           <div className={styles.content}>

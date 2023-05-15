@@ -2,9 +2,11 @@ import Image from 'next/image';
 import styles from '../../styles/press.module.scss';
 
 
-const EachPress = ({data, priority}) => {
+const EachPress = ({data}) => {
   const goUrl = () => {
-    window.open(data.url);
+    if(data.url !== null){
+      window.open(data.url);
+    }
   }
 
   return(
@@ -13,11 +15,11 @@ const EachPress = ({data, priority}) => {
       <div className={styles.imgBox}>
       <Image 
         className={data.url == null ? "": styles.clickable}
-        onClick={data.url == null ? "": goUrl}
+        onClick={goUrl}
         src={data.imgSrc} 
         alt="press capture" 
         fill
-        priority= {priority}
+        priority
         />
       </div>
     </div>
