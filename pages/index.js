@@ -15,6 +15,7 @@ const Work = ({workThumbnailData, layoutData}) => {
 		<>
 		<NextSeo
         title='Studio'
+				description='This is Sangmin Oh studio.'
         canonical={`${process.env.NEXT_PUBLIC_API_URL}`}
 				
       />
