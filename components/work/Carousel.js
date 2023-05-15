@@ -35,12 +35,13 @@ const Carousel = ({data}) => {
       </div>
       <div className={styles.dots}>
         <BiChevronLeft className={styles.btn} onClick={shiftDetail} data-value="prev" />
-          {tmpArray.map((each) => 
+          {tmpArray.map((each,index) => 
             <button 
               className={currentDetail == each ? styles.now: ""}
               key={each} 
               data-value={each} 
-              onClick={shiftDetail} />
+              onClick={shiftDetail} 
+              aria-label={(index + 1) + "st detail image button"} />
             )}
         <BiChevronRight className={styles.btn} onClick={shiftDetail} data-value="next" />
       </div>
