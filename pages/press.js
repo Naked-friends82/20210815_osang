@@ -36,8 +36,12 @@ export const getStaticProps = async() => {
     `${process.env.NEXT_PUBLIC_API_URL}/api/press`
   ).then((res) => res.json());
 
+  const layoutData = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/layout`
+    ).then((res) => res.json());
+
   // const pressData = (await import('../public/data/press.json')).default;
-  const layoutData = (await import(`../public/data/layout.json`)).default;
+  // const layoutData = (await import(`../public/data/layout.json`)).default;
 
   return{
     props: {pressData, layoutData},

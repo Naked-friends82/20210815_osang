@@ -56,10 +56,14 @@ export const getStaticProps = async({ params }) => {
 	).then((res) => res.json());
   const path = params.work;
 
+  const layoutData = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/layout`
+    ).then((res) => res.json());
+
   // const paths = (await import('../../public/data/workPath.json')).default;
   // const exactPath = paths.find((project) => project === params.work);
   // const detailData = (await import(`../../public/data/work/${exactPath}.json`)).default;
-  const layoutData = (await import(`../../public/data/layout.json`)).default;
+  // const layoutData = (await import(`../../public/data/layout.json`)).default;
 
   return {
     props:{ detailData, path, layoutData},

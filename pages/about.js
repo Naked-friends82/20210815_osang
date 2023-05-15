@@ -90,8 +90,13 @@ export async function getStaticProps() {
   const about_data = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/about`
   ).then((res) => res.json());
+
+  const layoutData = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/layout`
+    ).then((res) => res.json());
+
   // const about_data = (await import('../public/data/about.json')).default;
-  const layoutData = (await import(`../public/data/layout.json`)).default;
+  // const layoutData = (await import(`../public/data/layout.json`)).default;
   return {
     props: { about_data, layoutData },
     revalidate: 60 * 60,
