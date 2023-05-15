@@ -6,17 +6,17 @@ const SnsMenu = ({snsUrl}) => {
   return(
     <>
       {snsUrl.instagram ? 
-        <Link href={snsUrl.instagram}>
+        <Link href={snsUrl.instagram} aria-label='Instagram link'>
           <AiOutlineInstagram className={styles.snsIcon}/>
         </Link>
         : <></>}
       {snsUrl.facebook ? 
-        <Link href={snsUrl.facebook}>
+        <Link href={snsUrl.facebook} aria-label='Facebook link'>
           <AiOutlineFacebook className={styles.snsIcon}/>
         </Link>
         : <></>}
       {snsUrl.twitter ? 
-        <Link href={snsUrl.twitter}>
+        <Link href={snsUrl.twitter} aria-label='Twitter link'>
           <AiOutlineTwitter className={styles.snsIcon}/>
         </Link>
         : <></>}

@@ -23,7 +23,7 @@ function Navig(){
       <div className={navigVisi? styles.navSection : `${styles.navSection} ${styles.navMobile}`}>
         <div className={styles.linkBox}>
           {data.nav_list.map((eachMenu, index) => 
-            <Link key={eachMenu} href={`/${index !== 0 ? eachMenu.toLowerCase() : ""}`}>{eachMenu}</Link>
+            <Link key={eachMenu} href={`/${index !== 0 ? eachMenu.toLowerCase() : ""}`} aria-label={eachMenu + " link"} >{eachMenu}</Link>
           )}
           <SnsMenu snsUrl={data.sns}/>
           <div className={styles.backBtn} onClick={showNav} />

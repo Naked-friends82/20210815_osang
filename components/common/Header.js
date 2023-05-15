@@ -12,7 +12,7 @@ const Header = () => {
   return(
     <header className={styles.header}>
       <div className={styles.logoSection}>
-        <Link href='/'>
+        <Link href='/' aria-label='Home link'>
           <Image 
             src={data !== undefined ? data.logoSrc: "/asset/logo.png"}
             alt="main logo" 

@@ -24,7 +24,9 @@ const Work = ({workThumbnailData, layoutData}) => {
 				<Link 
 					key={each.project}
 					className={styles.project}
-					href={each.url}>
+					href={each.url}
+					aria-label={each.project + ' link'}
+					>
 					<Image 
 							src={each.thumbnail} 
 							width={270}

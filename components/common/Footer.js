@@ -9,7 +9,7 @@ const Footer = () => {
   
   return(
     <footer className={styles.footer}>
-      <Link href="/contact">
+      <Link href="/contact" aria-label='Contact link'>
         <div>{data.msg}</div>
       </Link>
       <div>
