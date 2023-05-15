@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Navig from './Navig';
 import styles from '../../styles/common/header.module.scss';
 import useSWR from 'swr';
-import { HEADER_KEY } from '../../hooks/useHeader';
+import { HEADER_KEY } from '../../hooks/initLayout';
 
 const Header = () => {
   const {data} = useSWR(HEADER_KEY);

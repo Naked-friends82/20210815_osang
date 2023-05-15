@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import useSWR from 'swr';
-import { FOOTER_KEY } from '../../hooks/useFooter';
+import { FOOTER_KEY } from '../../hooks/initLayout';
 import styles from '../../styles/common/footer.module.scss';
 
 const Footer = () => {

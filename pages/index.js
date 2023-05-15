@@ -1,22 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
+import initLayout from '../hooks/initLayout';
 import styles from '../styles/work.module.scss';
-import useHeader from '../hooks/useHeader';
-import useFooter from '../hooks/useFooter';
-import { useEffect } from 'react';
 
 
-const Work = ({workThumbnailData, headerData, footerData}) => {
+const Work = ({workThumbnailData, layoutData}) => {
+	if(!workThumbnailData || !layoutData) return null;
+	initLayout(layoutData);
+	
 	const {data} = workThumbnailData;
-
-	const {	initHeaderData	} = useHeader();
-	const {	initFooterData	} = useFooter();
-
-	useEffect(() => {
-		initHeaderData(headerData.data);
-		initFooterData(footerData.data);
-	},[initHeaderData, headerData,initFooterData,footerData])
 
 	return (
 		<>
@@ -55,18 +48,15 @@ export const getStaticProps = async() => {
 		`${process.env.NEXT_PUBLIC_API_URL}/api/work`
 	).then((res) => res.json());
 
-  const headerData = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/header`
-    ).then((res) => res.json());
+  // const layoutData = await fetch(
+  //   `${process.env.NEXT_PUBLIC_API_URL}/api/layout`
+  //   ).then((res) => res.json());
 	
-	const footerData = await fetch(
-		`${process.env.NEXT_PUBLIC_API_URL}/api/footer`
-		).then((res) => res.json());
 // const workThumbnailData = (await import('../public/data/workThumbnail.json')).default;
-// const headerData = (await import(`../public/data/header.json`)).default;
-// const footerData = (await import(`../public/data/footer.json`)).default;
+	const layoutData = (await import(`../public/data/layout.json`)).default;
+
 	return{
-		props:{workThumbnailData, headerData, footerData},
+		props:{workThumbnailData, layoutData},
 		revalidate:60*60
 	}
 }

@@ -1,10 +1,12 @@
 import { NextSeo } from 'next-seo';
 import EachPress from '../components/press/EachPress';
+import initLayout from '../hooks/initLayout';
 import styles from '../styles/press.module.scss';
 
 
-const Press = ({pressData}) => {
-  if (!pressData) return null;
+const Press = ({pressData, layoutData}) => {
+  if (!pressData || !layoutData) return null;
+  initLayout (layoutData);
   const {data} = pressData;
 
   return(
@@ -34,10 +36,12 @@ export const getStaticProps = async() => {
   const pressData = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/press`
   ).then((res) => res.json());
+
   // const pressData = (await import('../public/data/press.json')).default;
+  const layoutData = (await import(`../public/data/layout.json`)).default;
 
   return{
-    props: {pressData},
+    props: {pressData, layoutData},
     revalidate: 60*60,
   }
 }

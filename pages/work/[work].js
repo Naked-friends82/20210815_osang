@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
+import initLayout from '../../hooks/initLayout';
 import Carousel from '../../components/work/Carousel';
 import styles from '../../styles/eachWork.module.scss';
 
 
-const WorkDetail = ({detailData, path}) => {
-  if (!detailData) return null;
+const WorkDetail = ({detailData, path, layoutData}) => {
+  if (!detailData || !layoutData) return null;
+  initLayout(layoutData);
   const {isDone, data} = detailData;
 
   return(
@@ -57,9 +59,10 @@ export const getStaticProps = async({ params }) => {
   // const paths = (await import('../../public/data/workPath.json')).default;
   // const exactPath = paths.find((project) => project === params.work);
   // const detailData = (await import(`../../public/data/work/${exactPath}.json`)).default;
+  const layoutData = (await import(`../../public/data/layout.json`)).default;
 
   return {
-    props:{ detailData, path},
+    props:{ detailData, path, layoutData},
     revalidate: 60 * 60
   }
 }

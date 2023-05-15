@@ -1,8 +1,11 @@
 import { NextSeo } from 'next-seo';
 import styles from '../styles/contact.module.scss';
+import initLayout from '../hooks/initLayout';
 
-const Contact = () => {
-
+const Contact = ({layoutData}) => {
+	if(!layoutData) return null;
+	initLayout(layoutData);
+  
   return(
     <>
     <NextSeo
@@ -24,3 +27,11 @@ const Contact = () => {
 }
 
 export default Contact;
+
+export const getStaticProps = async() => {
+  const layoutData = (await import(`../public/data/layout.json`)).default;
+
+  return{
+    props: {layoutData}
+  }
+}

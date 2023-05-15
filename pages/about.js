@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
+import initLayout from '../hooks/initLayout';
 import styles from '../styles/about.module.scss';
 
 
-const About = ({about_data}) => {
+const About = ({about_data, layoutData}) => {
   if (!about_data || !layoutData) return null;
+	initLayout(layoutData);
+  
   const {
     profile, 
     simple_note,
@@ -88,8 +91,9 @@ export async function getStaticProps() {
     `${process.env.NEXT_PUBLIC_API_URL}/api/about`
   ).then((res) => res.json());
   // const about_data = (await import('../public/data/about.json')).default;
+  const layoutData = (await import(`../public/data/layout.json`)).default;
   return {
-    props: { about_data },
+    props: { about_data, layoutData },
     revalidate: 60 * 60,
   };
 }
