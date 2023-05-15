@@ -10,12 +10,10 @@ const Footer = () => {
   return(
     <footer className={styles.footer}>
       <Link href="/contact">
-          <div>
-          {data !== undefined ? data.msg: ""}
-          </div>
+        <div>{data.msg}</div>
       </Link>
       <div>
-        {data !== undefined ? data.copyright: ""} 
+        {data.copyright} 
         <br /> Designed by Naked Friends+82
       </div>
   </footer>
