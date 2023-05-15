@@ -7,6 +7,7 @@ import { HEADER_KEY } from '../../hooks/useHeader';
 
 const Header = () => {
   const {data} = useSWR(HEADER_KEY);
+  if(!data){return null};
 
   return(
     <header className={styles.header}>

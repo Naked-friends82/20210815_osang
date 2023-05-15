@@ -4,6 +4,7 @@ import styles from '../styles/about.module.scss';
 
 
 const About = ({about_data}) => {
+  if (!about_data || !layoutData) return null;
   const {
     profile, 
     simple_note,

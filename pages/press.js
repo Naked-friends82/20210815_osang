@@ -4,6 +4,7 @@ import styles from '../styles/press.module.scss';
 
 
 const Press = ({pressData}) => {
+  if (!pressData) return null;
   const {data} = pressData;
 
   return(

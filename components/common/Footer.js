@@ -5,6 +5,7 @@ import styles from '../../styles/common/footer.module.scss';
 
 const Footer = () => {
   const {data} = useSWR(FOOTER_KEY);
+  if(!data){return null};
   
   return(
     <footer className={styles.footer}>
