@@ -14,9 +14,8 @@ const Header = () => {
       <div className={styles.logoSection}>
         <Link href='/' aria-label='Home link'>
           <Image 
-            src={data !== undefined ? data.logoSrc: "/asset/logo.png"}
+            src={data.logoSrc}
             alt="main logo" 
-            sizes='200px'
             fill
             />
         </Link>

@@ -27,13 +27,14 @@ const Work = ({workThumbnailData, layoutData}) => {
 					href={each.url}
 					aria-label={each.project + ' link'}
 					>
-					<Image 
-							src={each.thumbnail} 
-							width={270}
-							height={427}
-							alt={each.project} 
-							priority={index==0}
-						/>
+					<div className={styles.imgBox}>
+						<Image 
+								src={each.thumbnail} 
+								alt={each.project}
+								fill
+								priority={index==0}
+							/>
+					</div>
 					<h1>{each.project}</h1>
 				</Link>
 			)}
