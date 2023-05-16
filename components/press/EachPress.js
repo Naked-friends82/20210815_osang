@@ -12,16 +12,15 @@ const EachPress = ({data}) => {
   return(
     <div className={styles.element}>
       <h2 className={styles.title}><span>{data.year}</span>{data.where}</h2>
-      <div className={styles.imgBox}>
       <Image 
         className={data.url == null ? "": styles.clickable}
         onClick={goUrl}
         src={data.imgSrc} 
+        sizes='(max-width: 599px) 16w, 600px'
         alt="press capture" 
-        fill
+        quality={60}
         priority
         />
-      </div>
     </div>
   )
 }

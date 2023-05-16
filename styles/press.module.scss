@@ -34,6 +34,7 @@
   font-size: $font-regular;
 
   @include mobile {
+    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -57,18 +58,17 @@
     }
   }
 
-  .imgBox {
-    position: relative;
+  & img {
+    width: 600px;
+    height: 425px;
 
-    img {
+    @include mobile {
       width: 100%;
-      height: 100%;
-      position: relative !important;
-      object-fit: cover;
+      height: auto;
     }
+  }
 
-    .clickable {
-      cursor: pointer;
-    }
+  .clickable {
+    cursor: pointer;
   }
 }

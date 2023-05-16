@@ -32,6 +32,7 @@ const Work = ({workThumbnailData, layoutData}) => {
 						<Image 
 								src={each.thumbnail} 
 								alt={each.project}
+								sizes='(max-width: 599px) 16w, 300px'
 								fill
 								priority
 							/>

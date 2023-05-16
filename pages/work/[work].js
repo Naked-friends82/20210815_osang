@@ -25,6 +25,7 @@ const WorkDetail = ({detailData, path, layoutData}) => {
             <Image 
               src={data.mainImg} 
               alt={`${data.title} main`}
+              sizes='(max-width: 599px) 16w, 600px'
               fill
               priority
               />
