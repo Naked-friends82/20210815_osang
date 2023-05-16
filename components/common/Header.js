@@ -15,8 +15,10 @@ const Header = () => {
         <Link href='/' aria-label='Home link'>
           <Image 
             src={data.logoSrc}
-            alt="main logo" 
+            alt="main logo"
+            sizes='(max-width: 599px) 16w, 200px'
             fill
+            priority
             />
         </Link>
       </div>
