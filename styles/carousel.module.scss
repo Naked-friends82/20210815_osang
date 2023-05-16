@@ -13,6 +13,7 @@
 
   & .imgBox {
     position: relative;
+    width: 600px;
 
     img {
       width: 100%;
@@ -21,6 +22,10 @@
       object-fit: cover;
       margin-bottom: 5px;
     }
+  }
+
+  & .invisible {
+    display: none;
   }
 
   & .dots {

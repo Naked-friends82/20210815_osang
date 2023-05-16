@@ -26,14 +26,20 @@ const Carousel = ({data}) => {
 
   return (
     <div className={styles.carousel}>
-      <div className={styles.imgBox}>
-        <Image 
-          src={data[currentDetail]} 
-          alt="detail"
-          sizes='(max-width: 599px) 16w, 600px'
-          fill
-          />
-      </div>
+      {data.map((imgSrc, index) => 
+        <div  
+          key={index}
+          className={index == currentDetail ? styles.imgBox : styles.invisible}>
+          <Image 
+            src={imgSrc} 
+            alt="detail"
+            sizes='(max-width: 599px) 16w, 600px'
+            quality={65}
+            fill
+            priority
+            />
+        </div>
+        )}
       <div className={styles.dots}>
         <BiChevronLeft className={styles.btn} onClick={shiftDetail} data-value="prev" />
           {tmpArray.map((each,index) => 
