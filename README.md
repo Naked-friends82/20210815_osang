@@ -30,7 +30,7 @@ So, I decide to learn and migrate to Next.js.
 | FCP |  0.6s  |  0.28s  |
 | LCP |  1.6s  |  0.66s   |
 | CLS |   0  |  0  |
-| Accessibility |   87  |  100  |
+| Accessibility |   87  |  100  |
 | SEO |  100   |  100  |
 
 
@@ -50,6 +50,7 @@ First, I used `layout.js` in `_app.js` because it is common to all pages in the 
 
 This error totally makes sense. Layout data was fetched in index, but the user does not access to index page. It is tricky point. I got layout data in index page, not `_app.js`, because `getStaticProps` is not available in `_app.js`.
 
+I solve this error with slightly repeated way. I insert data fetching code in every page. I know this is not technical way. But my project is small enough to do this and Next.js build all page already , there is no performance issue. It’s just developer’s issue not a production level issue.
 
 ## Contact 📬
 
