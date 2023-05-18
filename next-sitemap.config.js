@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://20210815-osang.vercel.app',
+  siteUrl: process.env.SITE_URL || 'https://www.osangmin.com',
   generateRobotsTxt: true, // (optional)
   // ...other options
 }

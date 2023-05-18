@@ -1,11 +1,11 @@
 export default {
-  titleTemplate: '%s - Sangmin Oh',
+  titleTemplate: '%s | Sangmin Oh',
   openGraph: {
     type: 'website',
     site_name: 'Sangmin Oh',
     description: 'Art and design studio established in 2021 by Sangmin Oh based in Netherlands and Korea.',
     images: [
-      { url: `${process.env.NEXT_PUBLIC_API_URL}/asset/knitted_light/knitted_light_1.jpg` },
+      { url: `${process.env.NEXT_PUBLIC_API_URL}/_next/image?url=%2Fasset%2Fknitted_light%2Fknitted_light_1.jpg&w=1200&q=65` },
     ],
   },
   additionalLinkTags: [
