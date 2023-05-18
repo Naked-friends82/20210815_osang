@@ -68,6 +68,6 @@ export const getStaticProps = async({ params }) => {
 
   return {
     props:{ detailData, path, layoutData},
-    revalidate: 60 * 60
+    revalidate: 60*60*12
   }
 }
