@@ -7,7 +7,7 @@ So, I decide to learn and migrate to Next.js.
 
 ## Plan 🗓
 
-| Before        | STEP 1        |   STEP 2        |
+| Before        | STEP 1 (now)  |   STEP 2        |
 | ------------- | ------------- |  -------------  |
 |Portfolio website for Artist with React.js |Migrate from React to Next.js **looks like** fetch data from headless CMS. |Make admin feature that Artist can CRUD without developer.|
 |React.js + Github deploy | Next.js + vercel deploy | Next.js + Spring boot + AWS     |
