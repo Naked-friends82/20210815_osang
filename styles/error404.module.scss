@@ -1,0 +1,57 @@
+@import './common/variables';
+@import './common/media_query';
+
+.section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  @include mobile {
+    height: 68vh;
+    margin: 0px;
+    margin-top: 100px;
+  }
+
+  & .error {
+    text-align: center;
+    margin-top: 30px;
+    font-size: $font-mmax;
+    line-height: 32px;
+
+    @include mobile {
+      font-size: $font-max;
+      line-height: 24px;
+    }
+  }
+
+  & .message {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    font-size: $font-sangmax;
+    line-height: 32px;
+
+    @include mobile {
+      margin-top: 6px;
+      margin-bottom: 20px;
+      font-size: $font-small;
+      line-height: 24px;
+    }
+  }
+
+  & .return {
+    font-size: $font-regular;
+    text-decoration: underline;
+    cursor: pointer;
+
+    @include mobile {
+      font-size: $font-regular;
+    }
+  }
+}
