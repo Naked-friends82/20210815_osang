@@ -19,7 +19,7 @@ const About = ({about_data, layoutData}) => {
   return(
     <>
 		<NextSeo
-        title='About'
+        title='About | Sangmin Oh'
         description='This is information page about Sangmin Oh'
         canonical={`${process.env.NEXT_PUBLIC_API_URL}/about`}
       />

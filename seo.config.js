@@ -1,5 +1,4 @@
 export default {
-  titleTemplate: '%s | Sangmin Oh',
   openGraph: {
     type: 'website',
     site_name: 'Sangmin Oh',

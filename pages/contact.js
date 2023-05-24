@@ -9,7 +9,7 @@ const Contact = ({layoutData}) => {
   return(
     <>
     <NextSeo
-        title='Contact'
+        title='Contact | Sangmin Oh'
         description='This is contact page about Sangmin Oh. Contact us and Tell me your stories.'
         canonical={`${process.env.NEXT_PUBLIC_API_URL}/contact`}
       />

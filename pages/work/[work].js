@@ -13,7 +13,7 @@ const WorkDetail = ({detailData, path, layoutData}) => {
   return(
     <>
     <NextSeo
-        title={data.title}
+        title={data.title + " | Sangmin Oh"}
         description={`There are ${data.title} project's photos and statement.`}
         canonical={`${process.env.NEXT_PUBLIC_API_URL}/work/${path}`}
       />

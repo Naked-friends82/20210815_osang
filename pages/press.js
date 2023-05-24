@@ -12,7 +12,7 @@ const Press = ({pressData, layoutData}) => {
   return(
     <>
     <NextSeo
-        title='Press'
+        title='Press | Sangmin Oh'
         description='This is press page about Sangmin Oh.'
         canonical={`${process.env.NEXT_PUBLIC_API_URL}/press`}
       />
