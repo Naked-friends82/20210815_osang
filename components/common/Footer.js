@@ -14,7 +14,7 @@ const Footer = () => {
       </Link>
       <div>
         {data.copyright} 
-        <br /> Designed by Naked Friends+82
+        <br /> Made by Kim Youngdong.
       </div>
   </footer>
   )
