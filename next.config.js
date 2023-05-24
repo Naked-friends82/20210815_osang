@@ -26,16 +26,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/sitemap.xml',
-        destination: '/sitemap.xml',
-        permanent: true,
-      },
-      {
-        source: '/sitemap-0.xml',
-        destination: '/sitemap-0.xml',
-        permanent: true,
-      },
-      {
         source: '/:path',
         destination: '/',
         permanent: true,
