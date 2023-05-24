@@ -44,7 +44,6 @@ export const getStaticProps = async() => {
   // const layoutData = (await import(`../public/data/layout.json`)).default;
 
   return{
-    props: {pressData, layoutData},
-    revalidate: 60*60*12,
+    props: {pressData, layoutData}
   }
 }

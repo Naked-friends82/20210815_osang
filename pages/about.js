@@ -98,7 +98,6 @@ export async function getStaticProps() {
   // const about_data = (await import('../public/data/about.json')).default;
   // const layoutData = (await import(`../public/data/layout.json`)).default;
   return {
-    props: { about_data, layoutData },
-    revalidate: 60*60*12,
+    props: { about_data, layoutData }
   };
 }

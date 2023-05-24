@@ -62,6 +62,6 @@ export const getStaticProps = async() => {
 
 	return{
 		props:{workThumbnailData, layoutData},
-		revalidate:60*60*12
+		// revalidate: 60*60*24*7,
 	}
 }
