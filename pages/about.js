@@ -16,6 +16,13 @@ const About = ({about_data, layoutData}) => {
     lecture
   } = about_data;
 
+  const goUrl = () => {
+    const GALLERY_URL = 'https://www.rademakersgallery.com/artists/289-sangmin-oh/';
+    
+    window.open(GALLERY_URL);
+  }
+
+
   return(
     <>
 		<NextSeo
@@ -43,7 +50,7 @@ const About = ({about_data, layoutData}) => {
         <div className={styles.desription}>
           <p>{simple_note.desc_1}</p>
           <p>{simple_note.desc_2}</p>
-          <p>{simple_note.desc_3}</p>
+          <p className={styles.gallery} onClick={goUrl}>{simple_note.desc_3}</p>
         </div>
 
         <div className={styles.cv}>
