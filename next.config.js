@@ -24,11 +24,6 @@ const nextConfig = {
         source: '/work_butterfly',
         destination: '/work/butterfly',
         permanent: true,
-      },
-      {
-        source: '/:path',
-        destination: '/',
-        permanent: true,
       }
     ];
   }
