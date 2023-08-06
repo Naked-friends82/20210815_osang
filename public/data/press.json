@@ -2,6 +2,102 @@
   "data": [
     {
       "year": 2023,
+      "where": "Textiel Museum",
+      "url": "https://textiellab.nl/ambacht-ontmoet-innovatie/",
+      "imgSrc": "/asset/press/press_25.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Yellow Trace",
+      "url": "https://www.yellowtrace.com.au/sangmin-oh-knitted-lights-3d-knitted-textile-art/",
+      "imgSrc": "/asset/press/press_24.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Elle Decoration",
+      "url": null,
+      "imgSrc": "/asset/press/press_23.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Fibreguard",
+      "url": "https://fibreguard.com/blog/durability-salvage-craft-and-stillness-this-was-milan-design-week-2023-2024",
+      "imgSrc": "/asset/press/press_22.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Masters Expo",
+      "url": "https://mastersexpo.com/en/lxry-departement-interieur-design/",
+      "imgSrc": "/asset/press/press_21.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Metropolis magazine",
+      "url": "https://metropolismag.com/products/16-of-the-best-young-designers-from-milan-2023/",
+      "imgSrc": "/asset/press/press_20.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Sixtysix magazine",
+      "url": "https://sixtysixmag.com/alcova-2023/",
+      "imgSrc": "/asset/press/press_19.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "CNN",
+      "url": "https://edition.cnn.com/style/article/milan-design-week-2023/index.html",
+      "imgSrc": "/asset/press/press_18.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Interior Design magazine",
+      "url": "https://interiordesign.net/designwire/alcova-milan-design-week-2023",
+      "imgSrc": "/asset/press/press_17.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "AD magazine",
+      "url": "https://www.ad-magazin.de/artikel/recycling-moebel-nachhaltig",
+      "imgSrc": "/asset/press/press_16.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Design Mate",
+      "url": "https://design-mate.ru/read/people/7-promising-designers-from-alcova",
+      "imgSrc": "/asset/press/press_15.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Falstaff Living",
+      "url": "https://www.falstaff.at/living/nd/designers-to-watch-gustav-winsth-sangmin-oh",
+      "imgSrc": "/asset/press/press_14.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Damn magazine",
+      "url": null,
+      "imgSrc": "/asset/press/press_13.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Elle Decoration",
+      "url": null,
+      "imgSrc": "/asset/press/press_12.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Adorno Design",
+      "url": "https://adorno.design/editorial/10-radical-designers-at-collectible-fair-2023-who-think-outside-the-box-for-a-better-future/",
+      "imgSrc": "/asset/press/press_11.jpg"
+    },
+    {
+      "year": 2023,
+      "where": "Interior Design magazine",
+      "url": "https://interiordesign.net/designwire/highlights-from-collectible-brussels-2023/",
+      "imgSrc": "/asset/press/press_10.jpg"
+    },
+    {
+      "year": 2023,
       "where": "Colour Hive_ MIX magazine",
       "url": null,
       "imgSrc": "/asset/press/press_09.jpg"
