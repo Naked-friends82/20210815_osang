@@ -50,7 +50,7 @@ const About = ({about_data, layoutData}) => {
         <div className={styles.desription}>
           <p>{simple_note.desc_1}</p>
           <p>{simple_note.desc_2}</p>
-          <p className={styles.gallery} onClick={goUrl}>{simple_note.desc_3}</p>
+          {/* <p className={styles.gallery} onClick={goUrl}>{simple_note.desc_3}</p> */}
         </div>
 
         <div className={styles.cv}>
