@@ -13,6 +13,48 @@
   },
   "exhibition": [
     {
+      "year": "2024",
+      "title": "Kolon Sotsot Rebirth with Kolon sports",
+      "where": "Jeju, KR",
+      "date": "Apr ~ Aug 2024",
+      "isDone": "upcoming"
+    },
+    {
+      "year": "2023",
+      "title": "PAN Amsterdam",
+      "where": "Dutch national art fair, Amsterdam, NL",
+      "date": "19 ~ 26 Nov",
+      "isDone": "done"
+    },
+    {
+      "year": "2023",
+      "title": "PINK DOM",
+      "where": "Krefeld, DE",
+      "date": "09 Nov ~ 08 Dec",
+      "isDone": "done"
+    },
+    {
+      "year": "2023",
+      "title": "Guiding the Future",
+      "where": "Rademakers gallery, Amsterdam, NL",
+      "date": "07 Sep ~ 25 Nov",
+      "isDone": "done"
+    },
+    {
+      "year": "2023",
+      "title": "Monster’s ball with ELLE Decoration",
+      "where": "Huidenclub gallery, Rotterdam, NL",
+      "date": "29 . Jun",
+      "isDone": "done"
+    },
+    {
+      "year": "2023",
+      "title": "PAD Paris",
+      "where": "Paris FR",
+      "date": "29 Mar ~ 2 Apr",
+      "isDone": "done"
+    },
+    {
       "year": "2023",
       "title": "Secrets of making III",
       "where": "Textiel Museum, Tilburg, NL",
@@ -24,21 +66,21 @@
       "title": "Design fair",
       "where": "Het nieuwe instituut, Rotterdam, NL",
       "date": "30 . Apr",
-      "isDone": "upcoming"
+      "isDone": "done"
     },
     {
       "year": "2023",
       "title": "Alcova, Milan Design Week",
       "where": "Porta Vittoria Abattoir, Milan, IT",
       "date": "17 ~ 23 . Apr",
-      "isDone": "upcoming"
+      "isDone": "done"
     },
     {
       "year": "2023",
       "title": "Collectible 'Curated Section'",
       "where": "Avenue du Port, Brussels, BE",
       "date": "9 ~ 12 . Mar",
-      "isDone": "upcoming"
+      "isDone": "done"
     },
     {
       "year": "2023",
