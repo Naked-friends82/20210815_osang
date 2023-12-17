@@ -7,13 +7,45 @@
   display: flex;
   justify-content: center;
   margin: 200px 0px 100px 0px;
-  padding: 0px 16px;
+  padding: 0px 0px; //only for under construction
+  // padding: 0px 16px;
 
   @include mobile {
     margin-top: 100px;
     margin-bottom: 30px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+.underConstruction {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../public/asset/tmp/under_contruction.jpeg');
+  background-size: cover;
+  margin: -80px 0px 30px 0px;
+  padding: 0px 16px;
+
+  @include mobile {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .notice {
+    margin-top: 42vh;
+    color: $color-white;
+    font-size: $font-notice;
+    font-weight: $weight-bold;
+
+    @include mobile {
+      margin-top: 48vh;
+      font-size: $font-max;
+    }
   }
 }
 

@@ -20,7 +20,12 @@ const Work = ({workThumbnailData, layoutData}) => {
 				
       />
 		<section className={styles.section}>
-			<div className={styles.flexBox}>
+			<div className={styles.underConstruction}>
+				<div className={styles.notice}>UNDER CONSTRUCTION</div>
+				
+				<div className={styles.notice}>COMING SOON</div>
+			</div>
+			{/* <div className={styles.flexBox}>
 			{data.map((each) => 
 				<Link 
 					key={each.project}
@@ -40,7 +45,7 @@ const Work = ({workThumbnailData, layoutData}) => {
 					<h1>{each.project}</h1>
 				</Link>
 			)}
-			</div>
+			</div> */}
 		</section>
 		</>
 	);
